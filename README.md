@@ -1,17 +1,11 @@
-# Gene Rate — BIOMOD 2026 (7-page website)
+# aQtSOME — update the other six pages to match ELSI
 
-Brand palette: `#182f5c` navy, `#1a202c` dark, `#ff9b2e` orange, `#ffffea` pale cream.
+Included: index.html, project.html, design.html, experiment.html, simulation.html, member.html, design.css, member.css, aqs-unify.css, style.css, script.js.
 
-## Publish
-1. Extract the ZIP.
-2. Upload the **files inside** the folder to the root of your GitHub repository (not the ZIP file and not the enclosing folder).
-3. Settings → Pages → Deploy from a branch → `main` / `(root)` → Save.
-4. Wait for deployment and click `Visit site`.
+Upload the six HTML files, `design.css`, `member.css`, and `aqs-unify.css` to the repository root. `style.css` and `script.js` are included for completeness; if your live versions are customized, retain those existing files. ELSI files are intentionally not changed.
 
-Pages: `index.html`, `project.html`, `design.html`, `experiment.html`, `simulation.html`, `elsi.html`, `member.html`.
+The header and footer use `assets/logo.webp`; if this file is missing, they show the text `aQtSOME.`. The original seven-link navigation remains. The Design images are still `assets/design/fig01.webp` through `fig13.webp`.
 
-All styling is in `style.css`; the small mobile-menu behavior is in `script.js`. The site's navigation and footer are embedded in each HTML file so it works without a build step.
+The Member page preserves the photo paths from the latest supplied member HTML and uses sponsor images at assets/member/InaoptikaBanner2000600_1.jpg, assets/member/image_9.png, assets/member/image_10.png.
 
-Edit the **main** content in each HTML page. The interior pages currently have placeholders; replace them with your own research content. Do not publish confidential data.
-
-If you modify menu items, update the header and footer links in each HTML file.
+Typography is controlled by `aqs-unify.css` and scoped to `.aqs-standard-page`, so your ELSI page is untouched. The Project, Experiment and Simulation content from the earlier template remains placeholder copy, not research claims.

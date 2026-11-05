@@ -1,37 +1,45 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Design of aQtSOME, a mechanosensitive amoeba-type molecular robot, Gene Rate BIOMOD 2026.">
-<title>Design | Gene Rate · BIOMOD 2026</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="design.css">
-<script defer src="script.js"></script>
-</head>
-<body>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Design of aQtSOME, a mechanosensitive amoeba-type molecular robot, aQtSOME BIOMOD 2026." name="description"/>
+<title>Design | aQtSOME · BIOMOD 2026</title>
+<link href="style.css" rel="stylesheet"/>
+<link href="design.css" rel="stylesheet"/>
+<script defer="" src="script.js"></script>
+<link href="aqs-unify.css" rel="stylesheet"/></head>
+<body class="aqs-standard-page">
 <a class="skip-link" href="#main">Skip to content</a>
-<header class="site-header"><div class="header-inner"><a aria-label="Gene Rate home" class="brand" href="index.html"><span class="brand-name">Gene Rate<span class="period">.</span></span><span class="brand-sub">BIOMOD 2026</span></a><button aria-controls="main-nav" aria-expanded="false" aria-label="Open navigation" class="menu-toggle" type="button"><span></span><span></span><span></span></button><nav aria-label="Primary navigation" class="nav" id="main-nav"><a class="" href="index.html">Home</a>
-<a class="" href="project.html">Project</a>
-<a aria-current="page" class="active" href="design.html"><svg aria-hidden="true" class="shuriken" height="17" viewbox="0 0 24 24" width="17"><path d="M12 1.5 15.5 8.5 22.5 12 15.5 15.5 12 22.5 8.5 15.5 1.5 12 8.5 8.5Z" fill="currentColor"></path><circle cx="12" cy="12" fill="var(--paper)" r="2"></circle></svg>Design</a>
-<a class="" href="experiment.html">Experiment</a>
-<a class="" href="simulation.html">Simulation</a>
-<a class="" href="elsi.html">ELSI</a>
-<a class="" href="member.html">Member</a></nav></div></header>
+<header class="site-header">
+<div class="header-inner">
+<a aria-label="aQtSOME トップページ" class="brand aqe-brand" href="index.html">
+<img alt="aQtSOME ロゴ" class="aqe-brand-logo" onerror="this.hidden=true;this.nextElementSibling.hidden=false" src="assets/logo.webp"/>
+<span class="aqe-brand-fallback" hidden="">aQtSOME<span class="aqe-brand-accent">.</span></span>
+<span class="aqe-brand-sub">BIOMOD 2026</span>
+</a>
+<button aria-controls="main-nav" aria-expanded="false" aria-label="メニューを開く" class="menu-toggle" type="button"><span></span><span></span><span></span></button>
+<nav aria-label="Main navigation" class="nav" id="main-nav">
+<a href="index.html">Home</a><a href="project.html">Project</a><a aria-current="page" class="active" href="design.html"><svg aria-hidden="true" class="shuriken" height="16" viewbox="0 0 24 24" width="16"><path d="M12 1.5 15.5 8.5 22.5 12 15.5 15.5 12 22.5 8.5 15.5 1.5 12 8.5 8.5Z" fill="currentColor"></path><circle cx="12" cy="12" fill="var(--paper,#ffffea)" r="2"></circle></svg>Design</a><a href="experiment.html">Experiment</a><a href="simulation.html">Simulation</a>
+<a href="elsi.html"> ELSI</a><a href="member.html">Member</a>
+</nav>
+</div>
+</header>
 <main id="main"><div class="grd-design">
 <section class="grd-hero"><div class="grd-shell"><p class="grd-overline">BIOMOD 2026 / GENE RATE / DESIGN</p><h1>Design<span class="grd-dot">.</span></h1><p class="grd-lead">From mechanical stimulation to autonomous membrane deformation</p><div class="grd-summary"><p>This page describes the molecular design of our molecular robot, aQtSOME. It covers the module that converts a mechanical stimulus into membrane deformation: MscL detects the rise in membrane tension that occurs when the robot is pressed into a narrow gap, the resulting Ca²⁺ influx activates INF2, and local actin polymerization pushes the leading edge of the membrane forward.</p>
 </div></div></section>
-<nav class="grd-toc" aria-label="On this page"><div class="grd-shell grd-toc-inner"><span>ON THIS PAGE</span><a href="#grd-01">01 Overview</a><a href="#grd-02">02 Key Components</a><a href="#grd-03">03 Working Principle</a><a href="#grd-references">References</a></div></nav>
-<div class="grd-shell grd-content"><section class="grd-section" id="grd-01"><div class="grd-section-heading"><svg class="grd-shuriken" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5 15.5 8.5 22.5 12 15.5 15.5 12 22.5 8.5 15.5 1.5 12 8.5 8.5Z" fill="currentColor"/><circle cx="12" cy="12" r="2" fill="#ffffea"/></svg><span class="grd-section-number">01</span><div><span class="grd-section-label">DESIGN / 01</span><h2>Overview of aQtSOME</h2></div></div><div class="grd-section-body"><p>We propose an amoeba-type molecular robot, aQtSOME, that induces actin polymerization in response to a mechanical stimulus and thereby produces a protrusion of its membrane. Previous artificial cell-type robots were driven by external inputs such as DNA signals or UV irradiation. In contrast, aQtSOME takes the force it receives from its surroundings as the input itself, so that it can change its shape autonomously without any external operation.</p>
+<nav aria-label="On this page" class="grd-toc"><div class="grd-shell grd-toc-inner"><span>ON THIS PAGE</span><a href="#grd-01">01 Overview</a><a href="#grd-02">02 Key Components</a><a href="#grd-03">03 Working Principle</a><a href="#grd-references">References</a></div></nav>
+<div class="grd-shell grd-content"><section class="grd-section" id="grd-01"><div class="grd-section-heading"><svg aria-hidden="true" class="grd-shuriken" viewbox="0 0 24 24"><path d="M12 1.5 15.5 8.5 22.5 12 15.5 15.5 12 22.5 8.5 15.5 1.5 12 8.5 8.5Z" fill="currentColor"></path><circle cx="12" cy="12" fill="#ffffea" r="2"></circle></svg><span class="grd-section-number">01</span><div><span class="grd-section-label">DESIGN / 01</span><h2>Overview of aQtSOME</h2></div></div><div class="grd-section-body"><p>We propose an amoeba-type molecular robot, aQtSOME, that induces actin polymerization in response to a mechanical stimulus and thereby produces a protrusion of its membrane. Previous artificial cell-type robots were driven by external inputs such as DNA signals or UV irradiation. In contrast, <strong>aQtSOME takes the force it receives from its surroundings as the input itself</strong>, so that it can change its shape autonomously without any external operation.</p>
 <figure class="grd-figure" id="figure-1">
 <div class="grd-figure-media"><img alt="Figure 1: Fig.1 Overall design of aQtSOME. When the GUV is pushed into a narrow gap between cells (left), MscL detects the te" hidden="" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false" onload="this.hidden=false;this.nextElementSibling.hidden=true" src="assets/design/fig01.webp"/><div class="grd-placeholder"><span aria-hidden="true" class="grd-placeholder-symbol">✦</span><strong>Figure 1</strong><span>Upload assets/design/fig01.webp</span></div></div>
 <figcaption><strong>Fig.1 Overall design of aQtSOME.</strong> When the GUV is pushed into a narrow gap between cells (left), MscL detects the tension generated at the leading edge of the membrane, and this signal is passed on to the activation of INF2. The activated INF2 drives actin polymerization, and the resulting polymerization force pushes the leading edge into the gap (right). This design integrates the three components described below.</figcaption>
 </figure>
 </div></section>
-<section class="grd-section" id="grd-02"><div class="grd-section-heading"><svg class="grd-shuriken" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5 15.5 8.5 22.5 12 15.5 15.5 12 22.5 8.5 15.5 1.5 12 8.5 8.5Z" fill="currentColor"/><circle cx="12" cy="12" r="2" fill="#ffffea"/></svg><span class="grd-section-number">02</span><div><span class="grd-section-label">DESIGN / 02</span><h2>Key Components and Their Roles</h2></div></div><div class="grd-section-body"><p>aQtSOME consists of three components. The Body is the place where the mechanical stimulus is received, the Sensor converts that stimulus into a chemical signal, and the Actuator converts the chemical signal into force. The Body is a GUV, which turns an external force into membrane tension. The Sensor is MscL, which turns membrane tension into a Ca²⁺ influx. The Actuator is INF2 together with actin, which turns Ca²⁺ into membrane deformation.</p>
+<section class="grd-section" id="grd-02"><div class="grd-section-heading"><svg aria-hidden="true" class="grd-shuriken" viewbox="0 0 24 24"><path d="M12 1.5 15.5 8.5 22.5 12 15.5 15.5 12 22.5 8.5 15.5 1.5 12 8.5 8.5Z" fill="currentColor"></path><circle cx="12" cy="12" fill="#ffffea" r="2"></circle></svg><span class="grd-section-number">02</span><div><span class="grd-section-label">DESIGN / 02</span><h2>Key Components and Their Roles</h2></div></div><div class="grd-section-body"><p>aQtSOME consists of three components. The Body is the place where the mechanical stimulus is received, the Sensor converts that stimulus into a chemical signal, and the Actuator converts the chemical signal into force. The Body is a GUV, which turns an external force into membrane tension. The Sensor is MscL, which turns membrane tension into a Ca²⁺ influx. The Actuator is INF2 together with actin, which turns Ca²⁺ into membrane deformation.</p>
 <h3 class="grd-subheading">Body — GUV (Giant Unilamellar Vesicle)</h3>
 <p>A GUV is a cell-sized vesicle made of a lipid bilayer that mimics a biological membrane. Because it can hold membrane proteins in its membrane and encapsulate soluble proteins in its lumen, it is widely used as the body of an artificial cell.</p>
-<p>In aQtSOME, the GUV holds MscL in its membrane and encapsulates INF2, calmodulin, actin and the regulatory factors of actin in its lumen. At the same time, the membrane itself is the place where an external force is received as membrane tension. We use DOPC as the main lipid and add DOPS so that INF2 can be localized to the membrane, as described later.</p>
+<p>In aQtSOME, <strong>the GUV holds MscL in its membrane and encapsulates INF2, calmodulin, actin and the regulatory factors of actin in its lumen</strong>. At the same time, the membrane itself is the place where an external force is received as membrane tension. We use DOPC as the main lipid and add DOPS so that INF2 can be localized to the membrane, as described later.</p>
 <figure class="grd-figure" id="figure-2">
 <div class="grd-figure-media"><img alt="Figure 2: Fig.2 Membrane structure of a GUV. A GUV is a vesicle enclosed by a single lipid bilayer. As shown in the magnified" hidden="" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false" onload="this.hidden=false;this.nextElementSibling.hidden=true" src="assets/design/fig02.webp"/><div class="grd-placeholder"><span aria-hidden="true" class="grd-placeholder-symbol">✦</span><strong>Figure 2</strong><span>Upload assets/design/fig02.webp</span></div></div>
 <figcaption><strong>Fig.2 Membrane structure of a GUV.</strong> A GUV is a vesicle enclosed by a single lipid bilayer. As shown in the magnified view, the lipids orient their hydrophilic head groups toward the aqueous phase and their hydrophobic acyl chains toward the interior of the membrane, forming a bilayer. This structure gives the GUV mechanical properties similar to those of a cell membrane, which is the basis for making tension-responsive elements work.</figcaption>
@@ -41,7 +49,7 @@
 <figcaption><strong>Fig.3 Fluorescence image of a GUV encapsulating a fluorescent dye.</strong> We prepared GUVs encapsulating a red fluorescent dye and observed them under a fluorescence microscope. The fluorescence was retained inside the vesicle and appeared as a sphere with a clear outline, which shows that a closed vesicle was formed. Scale bar, 5 µm.</figcaption>
 </figure>
 <h3 class="grd-subheading">Sensor — MscL (Mechanosensitive Channel of Large Conductance)</h3>
-<p>MscL is a mechanosensitive channel that directly senses a rise in membrane tension and opens. In aQtSOME, it converts a mechanical stimulus, namely contact with a narrow gap, into a chemical signal, namely an influx of Ca²⁺.</p>
+<p>MscL is a mechanosensitive channel that directly senses a rise in membrane tension and opens. In aQtSOME, <strong>it converts a mechanical stimulus, namely contact with a narrow gap, into a chemical signal, namely an influx of Ca²⁺</strong>.</p>
 <p>MscL is a homopentameric transmembrane protein. When it senses a change in membrane mechanics, it opens a large non-selective pore about 2.5 to 3 nm in diameter, which allows water, ions, peptides and other molecules of up to 10 kDa to pass through [1]. MscL from <em>E. coli</em> opens at a membrane tension of about 12 mN/m [2].</p>
 <p>The fact that the pore is not selective for a particular ion works in favor of our design. We do not need to introduce a dedicated Ca²⁺ channel, because Ca²⁺ that is present at a high concentration outside the membrane flows into the lumen along its concentration gradient once the pore opens.</p>
 <figure class="grd-figure" id="figure-4">
@@ -58,7 +66,7 @@
 </figure>
 <h3 class="grd-subheading">Actuator — INF2 and Actin</h3>
 <p>INF2 is a protein of the formin family that is involved in both the polymerization and the severing of actin. Because its activity is regulated by Ca²⁺/calmodulin, we can use the Ca²⁺ influx caused by the opening of MscL directly as the signal that starts actin polymerization.</p>
-<p>In aQtSOME, INF2 works as the actuator that receives the chemical signal of Ca²⁺ and converts it into the generation of force by actin polymerization. The polymerized actin forms a cytoskeleton and produces a force that pushes the membrane from inside.</p>
+<p>In aQtSOME, <strong>INF2 works as the actuator that receives the chemical signal of Ca²⁺ and converts it into the generation of force by actin polymerization</strong>. The polymerized actin forms a cytoskeleton and produces a force that pushes the membrane from inside.</p>
 <p>Profilin and thymosin, which are actin monomer-binding proteins, keep INF2 in its inactive state. By reducing the amount of free actin monomer, they allow the self-inhibition of INF2 to be established, which suppresses unintended polymerization before the stimulus.</p>
 <figure class="grd-figure" id="figure-7">
 <div class="grd-figure-media"><img alt="Figure 7: Fig.7 Activation mechanism of INF2 . INF2 is suppressed by self-inhibition, in which the DID on the N-terminal side" hidden="" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false" onload="this.hidden=false;this.nextElementSibling.hidden=true" src="assets/design/fig07.webp"/><div class="grd-placeholder"><span aria-hidden="true" class="grd-placeholder-symbol">✦</span><strong>Figure 7</strong><span>Upload assets/design/fig07.webp</span></div></div>
@@ -70,7 +78,7 @@
 </figure>
 <hr/>
 </div></section>
-<section class="grd-section" id="grd-03"><div class="grd-section-heading"><svg class="grd-shuriken" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5 15.5 8.5 22.5 12 15.5 15.5 12 22.5 8.5 15.5 1.5 12 8.5 8.5Z" fill="currentColor"/><circle cx="12" cy="12" r="2" fill="#ffffea"/></svg><span class="grd-section-number">03</span><div><span class="grd-section-label">DESIGN / 03</span><h2>Working Principle</h2></div></div><div class="grd-section-body"><p>aQtSOME is designed to convert a mechanical stimulus into membrane deformation through the following four steps.</p>
+<section class="grd-section" id="grd-03"><div class="grd-section-heading"><svg aria-hidden="true" class="grd-shuriken" viewbox="0 0 24 24"><path d="M12 1.5 15.5 8.5 22.5 12 15.5 15.5 12 22.5 8.5 15.5 1.5 12 8.5 8.5Z" fill="currentColor"></path><circle cx="12" cy="12" fill="#ffffea" r="2"></circle></svg><span class="grd-section-number">03</span><div><span class="grd-section-label">DESIGN / 03</span><h2>Working Principle</h2></div></div><div class="grd-section-body"><p>aQtSOME is designed to convert a mechanical stimulus into membrane deformation through the following four steps.</p>
 <figure class="grd-figure" id="figure-9">
 <div class="grd-figure-media"><img alt="Figure 9: Fig.9 Initial inactive state. This figure shows the state of aQtSOME before it receives a stimulus. Actin is disper" hidden="" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false" onload="this.hidden=false;this.nextElementSibling.hidden=true" src="assets/design/fig09.webp"/><div class="grd-placeholder"><span aria-hidden="true" class="grd-placeholder-symbol">✦</span><strong>Figure 9</strong><span>Upload assets/design/fig09.webp</span></div></div>
 <figcaption><strong>Fig.9 Initial inactive state.</strong> This figure shows the state of aQtSOME before it receives a stimulus. Actin is dispersed in the lumen of the GUV as monomers (G-actin) and no filament structure is formed. As shown in the magnified view, INF2 is tethered to the inner leaflet of the membrane through its PH domain, but it is kept inactive by self-inhibition. Profilin binds actin monomers and lowers the concentration of free monomer, which helps to maintain this inactive state. Calmodulin is present in the lumen in its Ca²⁺-free form, and MscL is closed. Ca²⁺ is present at a high concentration only outside the GUV.</figcaption>
@@ -100,7 +108,7 @@
 <figcaption><strong>Fig.13 Membrane protrusion driven by actin polymerization.</strong> Actin filaments elongate toward the leading edge of the membrane under the activated INF2, and the polymerization force pushes the membrane outward. As a result, a local protrusion is formed at the leading edge of the GUV (left). The magnified view shows how the INF2 tethered to the membrane is activated by Ca²⁺/calmodulin and elongates actin filaments in the direction that pushes the membrane (right).</figcaption>
 </figure>
 <p>Through this series of steps, we aim to realize a molecular robot that converts mechanical information from its environment into membrane deformation. The key point of this design is that everything from the input to the output is completed within the molecular system, so that no external operating signal is required.</p>
-<p>The mechanism described here is the one we assume in our design. The integration of each element and the function of the system as a whole still need to be verified by experiment.</p>
+<p><strong>The mechanism described here is the one we assume in our design.</strong> The integration of each element and the function of the system as a whole still need to be verified by experiment.</p>
 <hr/>
 </div></section>
 <section class="grd-section" id="grd-references"><div class="grd-section-heading"><span class="grd-section-label">REFERENCES</span><h2>References</h2></div><div class="grd-section-body"><p>[1] Mukherjee, N., Jose, M.D., Birkner, J.P., Walko, M., Ingólfsson, H.I., Dimitrova, A., Arnarez, C., Marrink, S.J. and Koçer, A. (2014), The activation mode of the mechanosensitive ion channel, MscL, by lysophosphatidylcholine differs from tension-induced gating. The FASEB Journal, 28: 4292-4302. https://doi.org/10.1096/fj.14-251579</p>
@@ -108,6 +116,9 @@
 <p>[3] Lap Man Lee, Allen P. Liu; A microfluidic pipette array for mechanophenotyping of cancer cells and mechanical gating of mechanosensitive channels. <em>Lab Chip</em> 2015; 15 (1): 264–273. https://doi.org/10.1039/c4lc01218f</p>
 <p>[4] Miriam Lee, Aiman Jalmukhambetova, T. Emme Burgin, Henry N. Higgs; Regulation of the formin INF2 by actin monomers and calcium/calmodulin. <em>J Cell Biol</em> 2 February 2026; 225 (2): e202507147. doi: https://doi.org/10.1083/jcb.202507147</p>
 </div></section></div></div></main>
-<footer class="site-footer"><div class="footer-inner"><div class="footer-top"><div><a class="footer-brand" href="index.html">Gene Rate<span class="period">.</span></a><p>BIOMOD 2026 · Research Wiki</p></div><nav aria-label="Footer navigation" class="footer-nav"><a href="index.html">Home</a><a href="project.html">Project</a><a href="design.html">Design</a><a href="experiment.html">Experiment</a><a href="simulation.html">Simulation</a><a href="elsi.html">ELSI</a><a href="member.html">Member</a></nav></div><div class="footer-bottom"><span>© 2026 Gene Rate</span><span>Made for BIOMOD 2026</span></div></div></footer>
+<footer class="site-footer"><div class="footer-inner"><div class="footer-top">
+<div class="aqe-footer-identity"><a aria-label="aQtSOME トップページ" class="aqe-footer-logo" href="index.html"><img alt="aQtSOME ロゴ" onerror="this.hidden=true;this.nextElementSibling.hidden=false" src="assets/logo.webp"/><span class="aqe-footer-fallback" hidden="">aQtSOME<span>.</span></span></a><p>BIOMOD 2026 · Research Wiki</p></div>
+<nav aria-label="Footer navigation" class="footer-nav"><a href="index.html">Home</a><a href="project.html">Project</a><a aria-current="page" href="design.html">Design</a><a href="experiment.html">Experiment</a><a href="simulation.html">Simulation</a><a href="elsi.html">ELSI</a><a href="member.html">Member</a></nav>
+</div><div class="footer-bottom"><span>© 2026 aQtSOME</span><span>Kyushu University · BIOMOD 2026</span></div></div></footer>
 </body>
 </html>

@@ -1,0 +1,33 @@
+/* aQtSOME: common presentation override for non-ELSI pages. Loaded LAST. */
+body.aqs-standard-page{font-family:Arial,"Noto Sans JP","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;font-size:18px;line-height:1.95;color:#1a202c;background:#ffffea}
+body.aqs-standard-page .site-header,body.aqs-standard-page .site-footer{font-size:initial}
+body.aqs-standard-page .site-header .nav a,body.aqs-standard-page .site-footer .footer-nav a{font-size:14px;letter-spacing:.01em}
+body.aqs-standard-page .aqe-brand{display:flex;flex-direction:column;justify-content:center;min-width:135px;max-width:245px;min-height:52px;line-height:1.1}
+body.aqs-standard-page .aqe-brand-logo{max-width:210px;max-height:52px;width:auto;height:auto;object-fit:contain;object-position:left}
+body.aqs-standard-page .aqe-brand-fallback{font:bold 27px Georgia,serif;letter-spacing:-.04em;color:#182f5c}
+body.aqs-standard-page .aqe-brand-accent,body.aqs-standard-page .aqe-footer-fallback span{color:#ff9b2e}
+body.aqs-standard-page .aqe-brand-sub{font:700 10px Arial,sans-serif;letter-spacing:.2em;margin-top:6px;color:#182f5c}
+body.aqs-standard-page .aqe-footer-logo{display:inline-flex;align-items:center;text-decoration:none;max-width:230px;min-height:44px}
+body.aqs-standard-page .aqe-footer-logo img{max-width:210px;max-height:54px;width:auto;height:auto;object-fit:contain;object-position:left}
+body.aqs-standard-page .aqe-footer-fallback{font:bold 29px Georgia,serif;color:#ffffea}
+body.aqs-standard-page main strong{font-weight:750;color:#182f5c}
+body.aqs-standard-page main p,body.aqs-standard-page main li{line-height:1.95}
+/* Design: same readable body size as the ELSI page */
+body.aqs-standard-page .grd-design{font-size:18px;line-height:1.95}
+body.aqs-standard-page .grd-design .grd-summary{color:#364154}
+body.aqs-standard-page .grd-design .grd-figure figcaption{font-size:15px;line-height:1.85}
+body.aqs-standard-page .grd-design .grd-toc a{font-size:15px}
+body.aqs-standard-page .grd-design .grd-section-body>p{font-size:18px}
+body.aqs-standard-page .grd-design .grd-section-heading h2{font-size:clamp(28px,3.1vw,37px)}
+body.aqs-standard-page .grd-design #grd-references .grd-section-body p{font-size:15px}
+/* Member: keep cards compact, but enlarge profile readability */
+body.aqs-standard-page .grm-member{font-size:18px;line-height:1.85}
+body.aqs-standard-page .grm-member .grm-intro,body.aqs-standard-page .grm-member .grm-support-intro,body.aqs-standard-page .grm-member .grm-sponsor-intro{font-size:18px;line-height:1.9;color:#364154}
+body.aqs-standard-page .grm-member .grm-card-body p{font-size:15px;line-height:1.65}
+body.aqs-standard-page .grm-member .grm-card-body h3{font-size:clamp(18px,1.7vw,22px)}
+body.aqs-standard-page .grm-member .grm-portrait img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+body.aqs-standard-page .grm-member .grm-sponsor-card .grm-logo-slot img{display:block;max-width:100%;max-height:110px;width:auto;height:auto;object-fit:contain;margin:auto}
+/* Home / Project / Experiment / Simulation use the original generic layout */
+body.aqs-standard-page main > .hero p,body.aqs-standard-page main > .page-hero p,body.aqs-standard-page main .section p,body.aqs-standard-page main .content p{font-size:18px;line-height:1.9}
+body.aqs-standard-page main h1,body.aqs-standard-page main h2,body.aqs-standard-page main h3{color:#182f5c}
+@media(max-width:700px){body.aqs-standard-page{font-size:17px;line-height:1.9}body.aqs-standard-page .grd-design{font-size:17px}body.aqs-standard-page .grd-design .grd-section-body>p{font-size:17px}body.aqs-standard-page .grd-design .grd-figure figcaption{font-size:14px}body.aqs-standard-page .grm-member{font-size:17px}body.aqs-standard-page .grm-member .grm-intro,body.aqs-standard-page .grm-member .grm-support-intro,body.aqs-standard-page .grm-member .grm-sponsor-intro{font-size:17px}body.aqs-standard-page .site-header .nav a{font-size:14px}}
