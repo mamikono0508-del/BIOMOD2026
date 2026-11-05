@@ -38,3 +38,15 @@
 .grd-design .grd-section-body a{color:var(--grd-navy);text-decoration:underline;text-decoration-color:var(--grd-orange);text-underline-offset:3px;overflow-wrap:anywhere}
 .grd-design #grd-references .grd-section-body p{font-size:14px;line-height:1.8;overflow-wrap:anywhere}
 @media(max-width:700px){.grd-design{font-size:16px}.grd-design .grd-shell{padding:0 20px}.grd-design .grd-hero{padding:55px 0 48px}.grd-design .grd-section{padding:50px 0}.grd-design .grd-section-heading{gap:10px}.grd-design .grd-section-number{font-size:20px}.grd-design .grd-shuriken{width:19px;height:19px}.grd-design .grd-toc-inner{gap:10px 17px}.grd-design .grd-figure-media,.grd-design .grd-placeholder{min-height:190px}}
+
+/* Fix: show Design figures */
+
+.grd-design .grd-figure-media img[hidden] {
+  display: block !important;
+}
+
+.grd-design .grd-figure-media img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
