@@ -59,3 +59,23 @@ body.aqs-elsi-page .footer-bottom{font-size:13px}
 /* English typography: preserve the 18px desktop / 17px mobile scale. */
 body.aqs-elsi-page{font-family:Arial,Helvetica,sans-serif}
 body.aqs-elsi-page .aqe-section h2,body.aqs-elsi-page .aqe-section h3{font-family:Arial,Helvetica,sans-serif}
+
+
+/* aQtSOME logo size adjustment */
+
+body.aqs-elsi-page .site-header .aqe-brand-logo {
+  width: 200px !important;
+  height: 75px !important;
+  max-width: none !important;
+  max-height: none !important;
+  object-fit: contain;
+}
+
+body.aqs-elsi-page .site-header .header-inner {
+  min-height: 100px !important;
+}
+
+body.aqs-elsi-page .site-header .aqe-brand {
+  min-height: 80px !important;
+  max-width: none !important;
+}
