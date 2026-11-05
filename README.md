@@ -1,11 +1,20 @@
-# aQtSOME — update the other six pages to match ELSI
+# aQtSOME — HOME + MEMBER full refresh
 
-Included: index.html, project.html, design.html, experiment.html, simulation.html, member.html, design.css, member.css, aqs-unify.css, style.css, script.js.
+Upload these four files **into the root of your GitHub repository**:
+- index.html (replaces old Home)
+- member.html (replaces old Member)
+- home.css (NEW; used only by index.html)
+- member.css (replaces old Member CSS)
 
-Upload the six HTML files, `design.css`, `member.css`, and `aqs-unify.css` to the repository root. `style.css` and `script.js` are included for completeness; if your live versions are customized, retain those existing files. ELSI files are intentionally not changed.
+Keep `style.css`, `script.js`, `design.css`, `elsi.css`, `aqs-unify.css`, all other HTML files, and `assets/` unchanged.
+The two new HTML pages load `style.css` first, then their **scoped** page CSS. Neither depends on `aqs-unify.css`.
 
-The header and footer use `assets/logo.webp`; if this file is missing, they show the text `aQtSOME.`. The original seven-link navigation remains. The Design images are still `assets/design/fig01.webp` through `fig13.webp`.
+The header and footer use `assets/logo.webp`. Without it, the brand falls back to the text "aQtSOME.".
+Member portraits retain the original filenames in `assets/member/`. Sponsor logos retain the following paths:
+- `assets/member/InaoptikaBanner2000600_1.jpg`
+- `assets/member/image_9.png`
+- `assets/member/image_10.png`
 
-The Member page preserves the photo paths from the latest supplied member HTML and uses sponsor images at assets/member/InaoptikaBanner2000600_1.jpg, assets/member/image_9.png, assets/member/image_10.png.
+Main body typography is 18px desktop and 17px mobile, matching ELSI. Profile-card descriptions are 16px for fit and legibility; smaller on narrow phones. Headers and footers match the ELSI branding and keep all seven navigation items.
 
-Typography is controlled by `aqs-unify.css` and scoped to `.aqs-standard-page`, so your ELSI page is untouched. The Project, Experiment and Simulation content from the earlier template remains placeholder copy, not research claims.
+After committing, visit your GitHub Pages URL and hard-refresh (Ctrl+F5) if cached styles persist. If an image doesn't show, verify its exact filename/capitalization in GitHub.

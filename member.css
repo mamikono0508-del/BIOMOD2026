@@ -1,77 +1,60 @@
-/* Design-independent Member page styles. All selectors begin with .grm-member. */
-.grm-member{--grm-navy:#182f5c;--grm-ink:#1a202c;--grm-orange:#ff9b2e;--grm-paper:#ffffea;--grm-border:rgba(26,32,44,.16);--grm-muted:#59616b;background:var(--grm-paper);color:var(--grm-ink);font-family:Arial,"Helvetica Neue",sans-serif;line-height:1.65;font-size:16px}
-.grm-member *{box-sizing:border-box}
-.grm-member .grm-wrap{max-width:1160px;margin:0 auto;padding:0 28px}
-.grm-member .grm-hero{padding:78px 0 72px;border-bottom:1px solid var(--grm-border)}
-.grm-member .grm-eyebrow{color:var(--grm-navy);font-size:12px;letter-spacing:.20em;font-weight:750;margin:0 0 18px}
-.grm-member .grm-hero h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(58px,9vw,104px);letter-spacing:-.06em;line-height:1.05;color:var(--grm-navy);margin:0 0 27px}
-.grm-member .grm-dot{color:var(--grm-orange)}
-.grm-member .grm-lead{font-weight:700;font-size:clamp(23px,2.8vw,31px);line-height:1.3;margin:0 0 15px;color:var(--grm-ink)}
-.grm-member .grm-intro{max-width:740px;color:var(--grm-muted);font-size:17px;line-height:1.8;margin:0}
-.grm-member .grm-roster{padding-top:65px;padding-bottom:82px}
-.grm-member .grm-section-heading{display:flex;align-items:flex-start;gap:14px;margin-bottom:30px}
-.grm-member .grm-shuriken{color:var(--grm-orange);font-size:23px;line-height:1.2;margin-top:3px}
-.grm-member .grm-index{font-family:Georgia,serif;color:var(--grm-navy);font-size:23px;font-weight:700;line-height:1.3}
-.grm-member .grm-section-heading p{margin:0;color:var(--grm-muted);font-weight:750;font-size:11px;letter-spacing:.16em}
-.grm-member .grm-section-heading h2{font-family:Arial,sans-serif;font-size:clamp(25px,3vw,35px);letter-spacing:-.035em;line-height:1.2;color:var(--grm-ink);margin:6px 0 0}
-.grm-member .grm-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
-.grm-member .grm-card{min-width:0;border:1px solid var(--grm-border);background:rgba(255,255,255,.34);overflow:hidden}
-.grm-member .grm-portrait{width:100%;aspect-ratio:4/5;background:linear-gradient(135deg,rgba(24,47,92,.095),rgba(24,47,92,.025));border-bottom:1px solid var(--grm-border);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;color:var(--grm-navy);position:relative}
-.grm-member .grm-portrait::before{content:"";position:absolute;inset:12px;border:1px dashed rgba(24,47,92,.20);pointer-events:none}
-.grm-member .grm-portrait img{display:block;width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
-.grm-member .grm-photo-mark{font-size:27px;color:var(--grm-orange)}
-.grm-member .grm-photo-caption{font-size:10px;letter-spacing:.17em;font-weight:750;color:var(--grm-muted)}
-.grm-member .grm-card-body{padding:22px 18px 26px;min-height:176px}
-.grm-member .grm-number{color:var(--grm-navy);font-size:11px;letter-spacing:.13em;font-weight:750}
-.grm-member .grm-card h3{font-size:clamp(18px,1.6vw,21px);font-weight:750;line-height:1.3;letter-spacing:-.025em;color:var(--grm-ink);margin:9px 0 13px;overflow-wrap:anywhere}
-.grm-member .grm-card p{font-size:13px;color:var(--grm-ink);line-height:1.55;margin:0}
-.grm-member .grm-card p span{color:var(--grm-muted)}
-.grm-member .grm-affiliations{padding:64px 0 86px;border-top:1px solid var(--grm-border);background:rgba(24,47,92,.032)}
-.grm-member .grm-affiliation-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
-.grm-member .grm-affiliation-grid>div{display:flex;align-items:center;gap:20px;padding:20px 24px;border:1px solid var(--grm-border);background:rgba(255,255,255,.32)}
-.grm-member .grm-affiliation-grid span{font-size:14px;font-weight:800;color:var(--grm-navy)}
-.grm-member .grm-affiliation-grid p{margin:0;font-weight:600;font-size:15px;color:var(--grm-ink)}
-@media(max-width:950px){.grm-member .grm-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:600px){.grm-member .grm-wrap{padding:0 20px}.grm-member .grm-hero{padding:55px 0 49px}.grm-member .grm-roster{padding-top:45px;padding-bottom:55px}.grm-member .grm-grid{gap:13px}.grm-member .grm-card-body{padding:15px 12px 19px;min-height:177px}.grm-member .grm-card h3{font-size:17px}.grm-member .grm-card p{font-size:12px}.grm-member .grm-photo-caption{font-size:9px;letter-spacing:.08em}.grm-member .grm-affiliations{padding:48px 0 58px}.grm-member .grm-affiliation-grid{grid-template-columns:1fr}.grm-member .grm-affiliation-grid>div{padding:16px}}
-@media(max-width:370px){.grm-member .grm-grid{grid-template-columns:1fr}.grm-member .grm-card-body{min-height:0}}
+/* Shared HOME/MEMBER refresh. All selectors are scoped to either page. */
+body.aqs-member-page{--aqs-navy:#182f5c;--aqs-ink:#1a202c;--aqs-orange:#ff9b2e;--aqs-paper:#ffffea;--aqs-line:rgba(24,47,92,.18);--aqs-muted:#44516a;margin:0;background:var(--aqs-paper);color:var(--aqs-ink);font-family:Arial,Helvetica,"Noto Sans",sans-serif;font-size:18px;line-height:1.95}
+body.aqs-member-page .aqs-container{max-width:1160px;margin:0 auto;padding-left:32px;padding-right:32px}
+body.aqs-member-page main strong{font-weight:800;color:#182f5c}
+body.aqs-member-page .aqs-orange{color:var(--aqs-orange)}
+body.aqs-member-page .site-header,body.aqs-member-page .site-footer{font-size:initial}
+body.aqs-member-page .aqs-logo-link{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;min-width:135px;max-width:240px;min-height:52px;line-height:1.1;text-decoration:none}
+body.aqs-member-page .aqs-brand-image{max-height:52px;max-width:210px;width:auto;height:auto;object-fit:contain;object-position:left}
+body.aqs-member-page .aqs-logo-fallback{font:700 28px/1.1 Georgia,serif;color:#182f5c}
+body.aqs-member-page .aqs-brand-caption{display:block;font:700 10px/1.6 Arial,sans-serif;letter-spacing:.2em;color:#182f5c;margin-top:5px}
+body.aqs-member-page .site-header .nav a,body.aqs-member-page .site-footer .footer-nav a{font-size:14px;letter-spacing:.01em}
+body.aqs-member-page .aqs-star{width:17px;height:17px;flex-shrink:0;color:var(--aqs-orange);vertical-align:middle}
+body.aqs-member-page .aqs-footer-logo{display:inline-flex;align-items:center;min-height:40px;max-width:225px;text-decoration:none}
+body.aqs-member-page .aqs-footer-logo img{max-height:54px;max-width:210px;width:auto;height:auto;object-fit:contain;object-position:left}
+body.aqs-member-page .aqs-footer-fallback{font:700 31px/1.1 Georgia,serif;color:#ffffea}
+body.aqs-member-page .aqs-footer-fallback span{color:#ff9b2e}
+body.aqs-member-page .aqs-footer-identity p{font-size:13px;color:#d5d9db;margin:6px 0 0}
+body.aqs-member-page .aqs-eyebrow{font-size:12px!important;letter-spacing:.17em;font-weight:800;color:#182f5c;line-height:1.5!important}
+body.aqs-member-page :is(.aqs-primary-button,.aqs-sponsor-card a):focus-visible{outline:3px solid #ff9b2e;outline-offset:4px}
+@media(max-width:600px){body.aqs-member-page{font-size:17px;line-height:1.9}body.aqs-member-page .aqs-container{padding-left:20px;padding-right:20px}body.aqs-member-page .aqs-brand-image{max-width:170px;max-height:44px}}
 
-/* Small ninja-inspired details; scoped entirely to the Member page. */
-.grm-member .grm-card{transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease;position:relative}
-.grm-member .grm-card:hover{transform:translateY(-5px);border-color:rgba(255,155,46,.65);box-shadow:0 12px 25px rgba(26,32,44,.09)}
-.grm-member .grm-card::after{content:"✦";position:absolute;right:15px;bottom:16px;color:var(--grm-orange);font-size:17px;opacity:.7}
-.grm-member .grm-portrait::after{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:var(--grm-orange);opacity:.75}
-@media(prefers-reduced-motion:reduce){.grm-member .grm-card{transition:none}.grm-member .grm-card:hover{transform:none}}
-
-.grm-member .grm-role{display:inline-block;background:var(--grm-navy);color:var(--grm-paper);font-size:11px;letter-spacing:.06em;font-weight:750;padding:5px 10px;margin:0 0 11px;line-height:1.4}
-
-/* Mentors & sponsors — scoped to Member only */
-.grm-member .grm-support{padding-top:66px;padding-bottom:76px}
-.grm-member .grm-support-intro{max-width:720px;margin:0 0 26px;color:var(--grm-muted);font-size:16px}
-.grm-member .grm-mentor-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
-.grm-member .grm-mentor-card{border:1px solid var(--grm-border);border-top:3px solid var(--grm-orange);background:rgba(255,255,255,.35);padding:27px 25px}
-.grm-member .grm-support-label{font-size:11px;letter-spacing:.16em;font-weight:800;color:var(--grm-navy)}
-.grm-member .grm-mentor-card h3{color:var(--grm-ink);font-size:23px;line-height:1.25;margin:12px 0 8px}
-.grm-member .grm-mentor-card p{color:var(--grm-muted);margin:0;font-size:14px}
-.grm-member .grm-sponsors{border-top:1px solid var(--grm-border);background:rgba(24,47,92,.032);padding:64px 0 85px}
-.grm-member .grm-sponsor-placeholder{display:flex;gap:18px;align-items:center;border:1px dashed rgba(24,47,92,.28);padding:25px 28px;max-width:740px;color:var(--grm-navy);background:rgba(255,255,255,.3)}
-.grm-member .grm-sponsor-placeholder>span{font-size:27px;color:var(--grm-orange)}
-.grm-member .grm-sponsor-placeholder strong{font-size:16px}
-.grm-member .grm-sponsor-placeholder p{margin:3px 0 0;font-size:14px;color:var(--grm-muted)}
-@media(max-width:600px){.grm-member .grm-support{padding-top:48px;padding-bottom:56px}.grm-member .grm-mentor-grid{grid-template-columns:1fr}.grm-member .grm-sponsors{padding:48px 0 60px}}
-
-/* Final sponsor cards — scoped exclusively to the Member page */
-.grm-member .grm-sponsor-intro{font-size:16px;color:var(--grm-muted);max-width:760px;margin:0 0 26px;line-height:1.75}
-.grm-member .grm-sponsor-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
-.grm-member .grm-sponsor-card{background:rgba(255,255,255,.4);border:1px solid var(--grm-border);padding:28px 24px 24px;display:flex;flex-direction:column;min-height:220px}
-.grm-member .grm-sponsor-card h3{font-size:clamp(19px,2.1vw,25px);line-height:1.25;color:var(--grm-navy);margin:19px 0 10px;overflow-wrap:anywhere}
-.grm-member .grm-sponsor-card p{font-size:14px;color:var(--grm-muted);margin:0 0 24px;line-height:1.6}
-.grm-member .grm-sponsor-card a{color:var(--grm-navy);font-size:13px;font-weight:700;text-decoration:underline;text-underline-offset:4px;margin-top:auto}
-.grm-member .grm-sponsor-card a:hover,.grm-member .grm-sponsor-card a:focus-visible{color:#a85c00}
-@media(max-width:800px){.grm-member .grm-sponsor-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:570px){.grm-member .grm-sponsor-grid{grid-template-columns:1fr}.grm-member .grm-sponsor-card{min-height:0}}
-
-/* Member sponsor image placeholders and fund acknowledgment. Scoped to this page. */
-.grm-member .grm-logo-slot{height:110px;position:relative;display:flex;align-items:center;justify-content:center;border:1px dashed rgba(24,47,92,.22);background:rgba(255,255,234,.7);margin-bottom:6px;overflow:hidden}
-.grm-member .grm-logo-slot img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:13px;background:#fffef5;z-index:1}
-.grm-member .grm-logo-fallback{font-size:11px;letter-spacing:.12em;color:var(--grm-muted);font-weight:700;text-align:center}
-.grm-member .grm-fund-note{margin:32px 0 0;padding:20px 24px;border-left:3px solid var(--grm-orange);background:rgba(255,255,255,.42);font-size:15px;line-height:1.7;color:var(--grm-ink)}
+body.aqs-member-page .aqs-member-hero{padding:78px 0 66px;border-bottom:1px solid var(--aqs-line);background:linear-gradient(135deg,rgba(24,47,92,.04),transparent 70%)}
+body.aqs-member-page .aqs-member-hero h1{font:700 clamp(65px,9vw,110px)/1.1 Georgia,serif;color:#182f5c;letter-spacing:-.06em;margin:19px 0 15px}
+body.aqs-member-page .aqs-member-lead{font-size:clamp(23px,2.9vw,32px);line-height:1.5;font-weight:800;color:#182f5c;margin:0 0 16px}
+body.aqs-member-page .aqs-member-intro{font-size:19px;line-height:1.95;max-width:900px;color:#1a202c;margin:0}
+body.aqs-member-page .aqs-member-section{padding-top:74px;padding-bottom:82px}
+body.aqs-member-page .aqs-member-advisors{background:rgba(24,47,92,.045);border-block:1px solid var(--aqs-line)}
+body.aqs-member-page .aqs-section-head{display:flex;gap:13px;align-items:flex-start;margin:0 0 29px}
+body.aqs-member-page .aqs-section-head>.aqs-star{width:23px;height:23px;margin-top:3px}
+body.aqs-member-page .aqs-section-head>span{font-size:18px;font-weight:800;color:#182f5c;line-height:1.3}
+body.aqs-member-page .aqs-section-head p{font-size:12px;line-height:1.5;color:#44516a;font-weight:800;letter-spacing:.12em;margin:0 0 7px}
+body.aqs-member-page .aqs-section-head h2{font:800 clamp(27px,3.2vw,36px)/1.3 Arial,sans-serif;color:#182f5c;margin:0}
+body.aqs-member-page .aqs-member-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+body.aqs-member-page .aqs-member-card{border:1px solid var(--aqs-line);background:#fffef5;overflow:hidden;min-width:0}
+body.aqs-member-page .aqs-portrait{position:relative;aspect-ratio:4/5;background:rgba(24,47,92,.08);display:flex;align-items:center;justify-content:center}
+body.aqs-member-page .aqs-portrait img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;position:absolute;inset:0}
+body.aqs-member-page .aqs-image-fallback{font-size:12px;letter-spacing:.08em;font-weight:800;color:#44516a;text-align:center;padding:20px}
+body.aqs-member-page .aqs-profile{padding:22px 19px 24px}
+body.aqs-member-page .aqs-member-number{font-size:12px;letter-spacing:.12em;font-weight:800;color:#182f5c}
+body.aqs-member-page .aqs-profile h3{font:800 22px/1.3 Arial,sans-serif;color:#182f5c;margin:10px 0 13px;overflow-wrap:anywhere}
+body.aqs-member-page .aqs-role{display:inline-block;background:#182f5c;color:#ffffea;font-size:13px;line-height:1.5;font-weight:800;padding:6px 10px}
+body.aqs-member-page .aqs-profile p{font-size:16px;line-height:1.65;color:#1a202c;margin:15px 0 0}
+body.aqs-member-page .aqs-profile p span{color:#44516a}
+body.aqs-member-page .aqs-section-intro{font-size:18px;line-height:1.9;margin:-4px 0 28px;max-width:870px}
+body.aqs-member-page .aqs-mentors-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+body.aqs-member-page .aqs-mentor{background:#fffef5;border:1px solid var(--aqs-line);border-top:3px solid #ff9b2e;padding:28px}
+body.aqs-member-page .aqs-mentor>span{font-weight:800;font-size:12px;color:#182f5c;letter-spacing:.14em}
+body.aqs-member-page .aqs-mentor h3{font-size:24px;line-height:1.35;color:#182f5c;margin:9px 0}
+body.aqs-member-page .aqs-mentor p{font-size:16px;color:#44516a;margin:0}
+body.aqs-member-page .aqs-sponsors-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+body.aqs-member-page .aqs-sponsor-card{background:#fffef5;border:1px solid var(--aqs-line);padding:24px;display:flex;flex-direction:column;gap:0;min-width:0}
+body.aqs-member-page .aqs-logo-slot{height:125px;background:#fff;border:1px solid var(--aqs-line);display:flex;justify-content:center;align-items:center;position:relative;padding:15px}
+body.aqs-member-page .aqs-logo-slot img{width:100%;height:100%;object-fit:contain;display:block}
+body.aqs-member-page .aqs-sponsor-card h3{font-size:24px;line-height:1.3;color:#182f5c;margin:18px 0 8px}
+body.aqs-member-page .aqs-sponsor-card p{font-size:16px;line-height:1.7;color:#44516a;margin:0 0 20px}
+body.aqs-member-page .aqs-sponsor-card a{font-size:15px;color:#182f5c;font-weight:800;text-underline-offset:4px;margin-top:auto}
+body.aqs-member-page .aqs-fund-note{border-left:4px solid #ff9b2e;background:rgba(24,47,92,.055);padding:21px 26px;font-size:18px;line-height:1.8;margin:31px 0 0}
+@media(max-width:900px){body.aqs-member-page .aqs-member-grid{grid-template-columns:repeat(2,minmax(0,1fr))}body.aqs-member-page .aqs-sponsors-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){body.aqs-member-page .aqs-member-hero{padding:55px 0 45px}body.aqs-member-page .aqs-member-intro{font-size:17px}body.aqs-member-page .aqs-member-section{padding-top:50px;padding-bottom:55px}body.aqs-member-page .aqs-member-grid{gap:12px}body.aqs-member-page .aqs-profile{padding:16px 13px 19px}body.aqs-member-page .aqs-profile h3{font-size:19px}body.aqs-member-page .aqs-profile p{font-size:14px}body.aqs-member-page .aqs-mentors-grid,body.aqs-member-page .aqs-sponsors-grid{grid-template-columns:1fr}body.aqs-member-page .aqs-section-intro,body.aqs-member-page .aqs-fund-note{font-size:17px}}
+body.aqs-member-page [hidden]{display:none!important}
