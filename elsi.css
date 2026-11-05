@@ -55,3 +55,7 @@ body.aqs-elsi-page .aqe-footer-identity p{font-size:13px;color:#d5d9db;margin:6p
 body.aqs-elsi-page .footer-bottom{font-size:13px}
 @media(max-width:900px){body.aqs-elsi-page .aqe-layout{grid-template-columns:1fr;gap:30px}body.aqs-elsi-page .aqe-toc{position:static;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:3px 12px;border:1px solid var(--aqe-border);padding:14px 19px}body.aqs-elsi-page .aqe-toc p{grid-column:1/-1;margin-bottom:5px}body.aqs-elsi-page .aqe-toc a{font-size:14px}}
 @media(max-width:600px){body.aqs-elsi-page{font-size:17px}body.aqs-elsi-page .aqe-wrap{padding-left:20px;padding-right:20px}body.aqs-elsi-page .aqe-hero{padding:55px 0 44px}body.aqs-elsi-page .aqe-hero-lead{font-size:23px}body.aqs-elsi-page .aqe-intro{font-size:17px}body.aqs-elsi-page .aqe-layout{padding-top:35px;padding-bottom:60px}body.aqs-elsi-page .aqe-section{margin-bottom:52px;padding-bottom:43px}body.aqs-elsi-page .aqe-section p,body.aqs-elsi-page .aqe-future li{font-size:17px}body.aqs-elsi-page .aqe-section h3{font-size:20px}body.aqs-elsi-page .aqe-highlight,body.aqs-elsi-page .aqe-feature,body.aqs-elsi-page .aqe-future{padding:17px 18px}}
+
+/* English typography: preserve the 18px desktop / 17px mobile scale. */
+body.aqs-elsi-page{font-family:Arial,Helvetica,sans-serif}
+body.aqs-elsi-page .aqe-section h2,body.aqs-elsi-page .aqe-section h3{font-family:Arial,Helvetica,sans-serif}
