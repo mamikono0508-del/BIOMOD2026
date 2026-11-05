@@ -58,3 +58,20 @@ body.aqs-member-page .aqs-fund-note{border-left:4px solid #ff9b2e;background:rgb
 @media(max-width:900px){body.aqs-member-page .aqs-member-grid{grid-template-columns:repeat(2,minmax(0,1fr))}body.aqs-member-page .aqs-sponsors-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){body.aqs-member-page .aqs-member-hero{padding:55px 0 45px}body.aqs-member-page .aqs-member-intro{font-size:17px}body.aqs-member-page .aqs-member-section{padding-top:50px;padding-bottom:55px}body.aqs-member-page .aqs-member-grid{gap:12px}body.aqs-member-page .aqs-profile{padding:16px 13px 19px}body.aqs-member-page .aqs-profile h3{font-size:19px}body.aqs-member-page .aqs-profile p{font-size:14px}body.aqs-member-page .aqs-mentors-grid,body.aqs-member-page .aqs-sponsors-grid{grid-template-columns:1fr}body.aqs-member-page .aqs-section-intro,body.aqs-member-page .aqs-fund-note{font-size:17px}}
 body.aqs-member-page [hidden]{display:none!important}
+
+/* MEMBER header layout fix */
+@media (min-width: 921px) {
+  body.aqs-member-page .site-header .aqs-logo-link {
+    max-width: none !important;
+    width: 250px;
+    flex-shrink: 0;
+  }
+
+  body.aqs-member-page .site-header .header-inner {
+    gap: 20px;
+  }
+
+  body.aqs-member-page .site-header .nav {
+    gap: 12px;
+  }
+}
