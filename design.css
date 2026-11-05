@@ -1,0 +1,40 @@
+/* Gene Rate Design page only. Do not edit the shared style.css. */
+.grd-design{--grd-navy:#182f5c;--grd-ink:#1a202c;--grd-orange:#ff9b2e;--grd-paper:#ffffea;--grd-muted:#4b5567;--grd-border:rgba(24,47,92,.18);background:var(--grd-paper);color:var(--grd-ink);font:17px/1.85 Arial,"Helvetica Neue",sans-serif}
+.grd-design *{box-sizing:border-box}
+.grd-design .grd-shell{max-width:1050px;margin:0 auto;padding:0 32px}
+.grd-design .grd-hero{padding:80px 0 62px;border-bottom:1px solid var(--grd-border)}
+.grd-design .grd-overline{font-size:12px;color:var(--grd-navy);font-weight:800;letter-spacing:.18em}
+.grd-design .grd-hero h1{font:700 clamp(56px,9vw,102px)/1.1 Georgia,"Times New Roman",serif;letter-spacing:-.06em;color:var(--grd-navy);margin:12px 0 25px}
+.grd-design .grd-dot{color:var(--grd-orange)}
+.grd-design .grd-lead{font-size:clamp(21px,2.6vw,28px);font-weight:700;line-height:1.4;max-width:880px;color:var(--grd-ink);margin:0 0 22px}
+.grd-design .grd-summary{max-width:865px;color:var(--grd-muted)}
+.grd-design .grd-summary p{margin:0}
+.grd-design .grd-toc{border-bottom:1px solid var(--grd-border)}
+.grd-design .grd-toc-inner{display:flex;flex-wrap:wrap;align-items:center;gap:12px 25px;padding-top:18px;padding-bottom:18px}
+.grd-design .grd-toc span{font-size:11px;letter-spacing:.16em;font-weight:800;color:var(--grd-muted)}
+.grd-design .grd-toc a{font-size:13px;font-weight:700;color:var(--grd-navy);text-decoration:none}
+.grd-design .grd-toc a:hover,.grd-design .grd-toc a:focus{text-decoration:underline;text-decoration-color:var(--grd-orange);text-underline-offset:6px}
+.grd-design .grd-section{border-bottom:1px solid var(--grd-border);padding:70px 0 60px;scroll-margin-top:100px}
+.grd-design .grd-section:last-child{border:0}
+.grd-design .grd-section-heading{display:flex;gap:15px;align-items:flex-start;margin-bottom:33px}
+.grd-design .grd-shuriken{width:23px;height:23px;flex:none;color:var(--grd-orange);margin-top:5px}
+.grd-design .grd-section-number{font:700 25px/1.3 Georgia,serif;color:var(--grd-navy)}
+.grd-design .grd-section-label{display:block;font-size:11px;letter-spacing:.17em;color:var(--grd-muted);font-weight:800}
+.grd-design .grd-section-heading h2{font-size:clamp(25px,3vw,35px);line-height:1.3;letter-spacing:-.02em;color:var(--grd-navy);margin:5px 0 0}
+.grd-design .grd-section-body>p{max-width:880px;margin:0 0 21px}
+.grd-design .grd-section-body strong{color:var(--grd-navy)}
+.grd-design .grd-component-heading,.grd-design .grd-subheading{font-size:clamp(20px,2.5vw,25px);line-height:1.4;color:var(--grd-navy);margin:42px 0 17px}
+.grd-design .grd-section-body em{font-style:italic}
+.grd-design .grd-figure{max-width:890px;margin:30px auto 42px}
+.grd-design .grd-figure-media{border:1px solid var(--grd-border);background:#fffdf2;min-height:260px;display:flex;align-items:center;justify-content:center}
+.grd-design .grd-figure-media img{display:block;max-width:100%;width:auto;height:auto;max-height:600px;object-fit:contain}
+.grd-design [hidden]{display:none!important}
+.grd-design .grd-placeholder{width:100%;min-height:260px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px;text-align:center;border:1px dashed rgba(24,47,92,.26);color:var(--grd-navy);padding:30px}
+.grd-design .grd-placeholder-symbol{font-size:26px;color:var(--grd-orange)}
+.grd-design .grd-placeholder strong{font-size:16px}
+.grd-design .grd-placeholder>span:last-child{font:13px/1.6 monospace;color:var(--grd-muted);overflow-wrap:anywhere}
+.grd-design .grd-figure figcaption{font-size:13px;line-height:1.7;color:var(--grd-muted);margin-top:11px}
+.grd-design .grd-figure figcaption strong{color:var(--grd-navy)}
+.grd-design .grd-section-body a{color:var(--grd-navy);text-decoration:underline;text-decoration-color:var(--grd-orange);text-underline-offset:3px;overflow-wrap:anywhere}
+.grd-design #grd-references .grd-section-body p{font-size:14px;line-height:1.8;overflow-wrap:anywhere}
+@media(max-width:700px){.grd-design{font-size:16px}.grd-design .grd-shell{padding:0 20px}.grd-design .grd-hero{padding:55px 0 48px}.grd-design .grd-section{padding:50px 0}.grd-design .grd-section-heading{gap:10px}.grd-design .grd-section-number{font-size:20px}.grd-design .grd-shuriken{width:19px;height:19px}.grd-design .grd-toc-inner{gap:10px 17px}.grd-design .grd-figure-media,.grd-design .grd-placeholder{min-height:190px}}
