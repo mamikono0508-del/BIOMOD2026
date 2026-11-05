@@ -1,0 +1,57 @@
+/* aQtSOME ELSI — scoped to this page only. Existing style.css is unchanged. */
+body.aqs-elsi-page{--aqe-navy:#182f5c;--aqe-ink:#1a202c;--aqe-orange:#ff9b2e;--aqe-paper:#ffffea;--aqe-muted:#4c5669;--aqe-border:rgba(24,47,92,.18);font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",Meiryo,Arial,sans-serif;font-size:18px;line-height:1.95;background:var(--aqe-paper);color:var(--aqe-ink)}
+body.aqs-elsi-page .site-header,body.aqs-elsi-page .site-footer{font-size:initial}
+body.aqs-elsi-page .site-header .nav a{font-size:14px;letter-spacing:.01em}
+body.aqs-elsi-page .site-footer .footer-nav a{font-size:14px}
+body.aqs-elsi-page .aqe-brand{display:flex;flex-direction:column;justify-content:center;min-width:135px;max-width:245px;min-height:52px;line-height:1.1}
+body.aqs-elsi-page .aqe-brand-logo{max-width:210px;max-height:52px;width:auto;height:auto;object-fit:contain;object-position:left}
+body.aqs-elsi-page .aqe-brand-fallback{font:bold 27px Georgia,serif;letter-spacing:-.04em;color:var(--aqe-navy)}
+body.aqs-elsi-page .aqe-brand-accent,body.aqs-elsi-page .aqe-footer-fallback span{color:var(--aqe-orange)}
+body.aqs-elsi-page .aqe-brand-sub{font:700 10px Arial,sans-serif;letter-spacing:.2em;margin-top:6px;color:var(--aqe-navy)}
+body.aqs-elsi-page .aqe-root{width:100%;overflow:hidden}
+body.aqs-elsi-page .aqe-wrap{max-width:1160px;margin:0 auto;padding:0 32px}
+body.aqs-elsi-page .aqe-hero{border-bottom:1px solid var(--aqe-border);padding:76px 0 70px;background:linear-gradient(125deg,rgba(24,47,92,.045),transparent 62%)}
+body.aqs-elsi-page .aqe-kicker{margin:0;font:800 12px Arial,sans-serif;letter-spacing:.18em;color:var(--aqe-navy)}
+body.aqs-elsi-page .aqe-kicker span{padding:0 8px;color:var(--aqe-orange)}
+body.aqs-elsi-page .aqe-hero h1{font:700 clamp(64px,9vw,112px)/1.1 Georgia,"Yu Mincho",serif;color:var(--aqe-navy);letter-spacing:-.055em;margin:20px 0 4px}
+body.aqs-elsi-page .aqe-period{color:var(--aqe-orange)}
+body.aqs-elsi-page .aqe-hero-en{font-size:16px;color:var(--aqe-muted);letter-spacing:.04em;margin:0 0 30px}
+body.aqs-elsi-page .aqe-hero-lead{font-size:clamp(22px,3vw,32px);font-weight:800;color:var(--aqe-navy);line-height:1.5;margin:0 0 21px}
+body.aqs-elsi-page .aqe-intro{max-width:850px;font-size:19px;line-height:2;color:var(--aqe-ink);margin:0 0 26px}
+body.aqs-elsi-page .aqe-legend{display:flex;flex-wrap:wrap;gap:10px 12px;align-items:center;font-size:13px;color:var(--aqe-muted)}
+body.aqs-elsi-page .aqe-tag{display:inline-block;padding:3px 10px;font:bold 12px/1.8 "Noto Sans JP",sans-serif;letter-spacing:.02em;border-radius:2px;white-space:nowrap}
+body.aqs-elsi-page .aqe-tag-done{background:var(--aqe-navy);color:#fff}
+body.aqs-elsi-page .aqe-tag-future{background:rgba(255,155,46,.18);color:#7e4200;border:1px solid rgba(255,155,46,.6)}
+body.aqs-elsi-page .aqe-layout{display:grid;grid-template-columns:190px minmax(0,1fr);gap:64px;padding-top:64px;padding-bottom:95px}
+body.aqs-elsi-page .aqe-toc{position:sticky;top:120px;align-self:start;display:flex;flex-direction:column;gap:4px;border-left:1px solid var(--aqe-border);padding-left:19px}
+body.aqs-elsi-page .aqe-toc p{font:800 12px Arial,sans-serif;letter-spacing:.18em;margin:0 0 14px;color:var(--aqe-navy)}
+body.aqs-elsi-page .aqe-toc a{text-decoration:none;color:var(--aqe-muted);font-size:13px;line-height:1.6;padding:8px 0}
+body.aqs-elsi-page .aqe-toc a:hover{color:var(--aqe-navy);text-decoration:underline;text-decoration-color:var(--aqe-orange);text-underline-offset:5px}
+body.aqs-elsi-page .aqe-section{scroll-margin-top:115px;margin:0 0 78px;padding:0 0 65px;border-bottom:1px solid var(--aqe-border)}
+body.aqs-elsi-page .aqe-section:last-child{border-bottom:0;padding-bottom:0;margin-bottom:0}
+body.aqs-elsi-page .aqe-section-head{display:flex;align-items:center;gap:13px;margin-bottom:23px}
+body.aqs-elsi-page .aqe-shuriken{font-size:23px;color:var(--aqe-orange);line-height:1}
+body.aqs-elsi-page .aqe-num{color:var(--aqe-navy);font:800 15px Arial,sans-serif}
+body.aqs-elsi-page .aqe-section-head p{margin:0 0 3px;font:800 11px Arial,sans-serif;letter-spacing:.17em;color:var(--aqe-muted)}
+body.aqs-elsi-page .aqe-section h2{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;font-weight:800;font-size:clamp(26px,3.2vw,34px);letter-spacing:0;line-height:1.4;color:var(--aqe-navy);margin:0}
+body.aqs-elsi-page .aqe-section h3{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;font-weight:800;font-size:22px;letter-spacing:0;color:var(--aqe-navy);line-height:1.5;margin:33px 0 12px}
+body.aqs-elsi-page .aqe-section p{font-size:18px;line-height:2.0;margin:0 0 22px}
+body.aqs-elsi-page .aqe-section strong,body.aqs-elsi-page .aqe-intro strong{font-weight:800;color:#132c57}
+body.aqs-elsi-page .aqe-highlight{border-left:4px solid var(--aqe-orange);padding:20px 25px 16px;margin:26px 0 28px;background:rgba(24,47,92,.055)}
+body.aqs-elsi-page .aqe-highlight p{margin:13px 0 0}
+body.aqs-elsi-page .aqe-feature{padding:22px 27px;margin:26px 0;background:#fffef4;border:1px solid var(--aqe-border)}
+body.aqs-elsi-page .aqe-feature-no{font:800 12px Arial,sans-serif;color:#9d5a07;letter-spacing:.12em}
+body.aqs-elsi-page .aqe-feature h3{margin:8px 0 11px}
+body.aqs-elsi-page .aqe-feature p{margin-bottom:0}
+body.aqs-elsi-page .aqe-future{margin:30px 0;padding:23px 27px;border:1px solid rgba(255,155,46,.6);background:rgba(255,155,46,.055)}
+body.aqs-elsi-page .aqe-future h3{margin-top:12px}
+body.aqs-elsi-page .aqe-future ul{padding-left:24px;margin:8px 0 16px}
+body.aqs-elsi-page .aqe-future li{font-size:18px;line-height:1.8;margin:7px 0}
+body.aqs-elsi-page .aqe-future p{margin-bottom:0}
+body.aqs-elsi-page .aqe-footer-logo{display:inline-block;min-height:36px;max-width:220px;text-decoration:none}
+body.aqs-elsi-page .aqe-footer-logo img{max-height:58px;max-width:200px;object-fit:contain;object-position:left}
+body.aqs-elsi-page .aqe-footer-fallback{font:700 32px Georgia,serif;color:var(--aqe-paper)}
+body.aqs-elsi-page .aqe-footer-identity p{font-size:13px;color:#d5d9db;margin:6px 0 0}
+body.aqs-elsi-page .footer-bottom{font-size:13px}
+@media(max-width:900px){body.aqs-elsi-page .aqe-layout{grid-template-columns:1fr;gap:30px}body.aqs-elsi-page .aqe-toc{position:static;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:3px 12px;border:1px solid var(--aqe-border);padding:14px 19px}body.aqs-elsi-page .aqe-toc p{grid-column:1/-1;margin-bottom:5px}body.aqs-elsi-page .aqe-toc a{font-size:14px}}
+@media(max-width:600px){body.aqs-elsi-page{font-size:17px}body.aqs-elsi-page .aqe-wrap{padding-left:20px;padding-right:20px}body.aqs-elsi-page .aqe-hero{padding:55px 0 44px}body.aqs-elsi-page .aqe-hero-lead{font-size:23px}body.aqs-elsi-page .aqe-intro{font-size:17px}body.aqs-elsi-page .aqe-layout{padding-top:35px;padding-bottom:60px}body.aqs-elsi-page .aqe-section{margin-bottom:52px;padding-bottom:43px}body.aqs-elsi-page .aqe-section p,body.aqs-elsi-page .aqe-future li{font-size:17px}body.aqs-elsi-page .aqe-section h3{font-size:20px}body.aqs-elsi-page .aqe-highlight,body.aqs-elsi-page .aqe-feature,body.aqs-elsi-page .aqe-future{padding:17px 18px}}
