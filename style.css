@@ -37,3 +37,71 @@
   }
 }
 
+
+/* ==================================
+   aQtSOME Header & Footer Adjustment
+   ================================== */
+
+/* Header logo */
+.site-header .aqe-brand-logo,
+.site-header .aqs-brand-image {
+  width: 250px !important;
+  height: 95px !important;
+  max-width: none !important;
+  max-height: none !important;
+  object-fit: contain;
+  object-position: left center;
+}
+
+/* Header height */
+.site-header .header-inner {
+  min-height: 120px !important;
+}
+
+/* Navigation text */
+.site-header .nav a {
+  font-size: 16px !important;
+  font-weight: 600;
+}
+
+/* Footer logo */
+.site-footer .aqe-brand-logo,
+.site-footer .aqs-brand-image,
+.site-footer .aqs-footer-logo img {
+  width: 250px !important;
+  height: 95px !important;
+  max-width: none !important;
+  max-height: none !important;
+  object-fit: contain;
+  object-position: left center;
+}
+
+/* Footer text */
+.site-footer .footer-nav a {
+  font-size: 16px !important;
+}
+
+.site-footer p,
+.site-footer .footer-bottom {
+  font-size: 15px !important;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .site-header .aqe-brand-logo,
+  .site-header .aqs-brand-image {
+    width: 190px !important;
+    height: 75px !important;
+  }
+
+  .site-header .header-inner {
+    min-height: 95px !important;
+  }
+
+  .site-footer .aqe-brand-logo,
+  .site-footer .aqs-brand-image,
+  .site-footer .aqs-footer-logo img {
+    width: 190px !important;
+    height: 75px !important;
+  }
+}
