@@ -1,4 +1,4 @@
-/* Gene Rate Design page only. Do not edit the shared style.css. */
+/* aQtSOME Design page only. Do not edit shared style.css. */
 .grd-design{--grd-navy:#182f5c;--grd-ink:#1a202c;--grd-orange:#ff9b2e;--grd-paper:#ffffea;--grd-muted:#4b5567;--grd-border:rgba(24,47,92,.18);background:var(--grd-paper);color:var(--grd-ink);font:17px/1.85 Arial,"Helvetica Neue",sans-serif}
 .grd-design *{box-sizing:border-box}
 .grd-design .grd-shell{max-width:1050px;margin:0 auto;padding:0 32px}
@@ -39,14 +39,35 @@
 .grd-design #grd-references .grd-section-body p{font-size:14px;line-height:1.8;overflow-wrap:anywhere}
 @media(max-width:700px){.grd-design{font-size:16px}.grd-design .grd-shell{padding:0 20px}.grd-design .grd-hero{padding:55px 0 48px}.grd-design .grd-section{padding:50px 0}.grd-design .grd-section-heading{gap:10px}.grd-design .grd-section-number{font-size:20px}.grd-design .grd-shuriken{width:19px;height:19px}.grd-design .grd-toc-inner{gap:10px 17px}.grd-design .grd-figure-media,.grd-design .grd-placeholder{min-height:190px}}
 
-/* Fix: show Design figures */
-
-.grd-design .grd-figure-media img[hidden] {
-  display: block !important;
-}
-
-.grd-design .grd-figure-media img {
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-}
+/* Design v2 refinements / responsive shared branding */
+body.aqs-design-page .site-header .aqs-logo-link{min-width:0;max-width:none;display:flex;flex-direction:column;justify-content:center;min-height:85px;}
+body.aqs-design-page .site-header .aqs-brand-image{width:235px!important;height:86px!important;max-width:none!important;max-height:none!important;object-fit:contain;object-position:left center}
+body.aqs-design-page .site-header .aqs-brand-caption{font-size:11px;font-weight:700;letter-spacing:.19em;color:#182f5c;margin-top:2px}
+body.aqs-design-page .site-header .header-inner{min-height:110px}
+body.aqs-design-page .site-header .nav a{font-size:15px}
+body.aqs-design-page .site-footer .footer-nav a{font-size:15px}
+body.aqs-design-page .site-footer .aqs-footer-logo img{width:235px!important;height:86px!important;max-width:none!important;max-height:none!important;object-fit:contain;object-position:left center}
+body.aqs-design-page .site-footer .aqs-footer-identity p{font-size:14px}
+body.aqs-design-page .site-footer .footer-bottom{font-size:13px}
+.grd-design{font-size:18px;line-height:1.92}
+.grd-design .grd-hero{padding:78px 0 65px}
+.grd-design .grd-summary{font-size:18px}
+.grd-design .grd-status{display:inline-block;margin-top:25px;padding:8px 14px;border:1px solid rgba(24,47,92,.2);color:#182f5c;font-size:11px;font-weight:800;letter-spacing:.09em}
+.grd-design .grd-status span{color:#ff9b2e;margin:0 8px}
+.grd-design .grd-section{scroll-margin-top:130px}
+.grd-design .grd-mark{font-size:23px;line-height:1;color:#ff9b2e;flex:none;margin-top:5px}
+.grd-design .grd-section-body>p{max-width:890px}
+.grd-design .grd-subheading{margin-top:47px;margin-bottom:17px}
+.grd-design .grd-minor-heading{font:bold 17px/1.5 Arial,sans-serif;color:#182f5c;margin:25px 0 10px;border-left:3px solid #ff9b2e;padding-left:14px}
+.grd-design .grd-figure{max-width:890px;margin:34px auto 43px}
+.grd-design .grd-figure-media{min-height:0;padding:15px;background:#fffef6}
+.grd-design .grd-figure-media img{display:block;width:auto;max-width:100%;max-height:650px;object-fit:contain}
+.grd-design .grd-placeholder{min-height:250px}
+.grd-design .grd-figure figcaption{font-size:14px;line-height:1.75}
+.grd-design .grd-figure figcaption strong{font-weight:800}
+.grd-design .grd-reference{font-size:14px;line-height:1.8;margin-bottom:18px;overflow-wrap:anywhere;max-width:900px}
+.grd-design .grd-ref-number{font-weight:800;color:#182f5c}
+.grd-design .grd-cite{color:#182f5c;text-decoration:underline;text-decoration-color:#ff9b2e;text-underline-offset:3px}
+.grd-design [hidden]{display:none!important}
+@media(max-width:920px){body.aqs-design-page .site-header .header-inner{min-height:95px}}
+@media(max-width:700px){.grd-design{font-size:17px}.grd-design .grd-summary{font-size:17px}.grd-design .grd-figure-media{padding:7px}.grd-design .grd-figure figcaption{font-size:13px}body.aqs-design-page .site-header .aqs-brand-image{width:185px!important;height:70px!important}body.aqs-design-page .site-footer .aqs-footer-logo img{width:185px!important;height:70px!important}}
