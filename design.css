@@ -71,3 +71,25 @@ body.aqs-design-page .site-footer .footer-bottom{font-size:13px}
 .grd-design [hidden]{display:none!important}
 @media(max-width:920px){body.aqs-design-page .site-header .header-inner{min-height:95px}}
 @media(max-width:700px){.grd-design{font-size:17px}.grd-design .grd-summary{font-size:17px}.grd-design .grd-figure-media{padding:7px}.grd-design .grd-figure figcaption{font-size:13px}body.aqs-design-page .site-header .aqs-brand-image{width:185px!important;height:70px!important}body.aqs-design-page .site-footer .aqs-footer-logo img{width:185px!important;height:70px!important}}
+
+/* Fix oversized shuriken in Design mobile menu */
+
+body.aqs-design-page .site-header .nav svg,
+body.aqs-design-page .site-header .nav .aqs-star,
+body.aqs-design-page .site-header .nav .shuriken {
+  width: 16px !important;
+  height: 16px !important;
+  min-width: 16px !important;
+  max-width: 16px !important;
+  min-height: 16px !important;
+  max-height: 16px !important;
+  flex: 0 0 16px !important;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Keep menu icons aligned with text */
+body.aqs-design-page .site-header .nav a {
+  align-items: center;
+  gap: 6px;
+}
