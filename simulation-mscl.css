@@ -353,3 +353,93 @@ body.aqs-simulation-page .site-footer .aqs-footer-logo img {width:185px!importan
  .mscl-paper section{margin-bottom:45px;}
  .mscl-paper .sim2 .out{grid-template-columns:repeat(2,minmax(0,1fr));}
 }
+
+
+/* ===== Final visual harmonization with Project / Design / Experiment ===== */
+/* Main reading text: same sans-serif / ink grey / comfortable 18px as Project. */
+.mscl-paper {
+  --paper:#ffffea;
+  --ink:#1a202c;
+  --ink-soft:#4b5567;
+  --line:rgba(24,47,92,.18);
+  --accent:#ff9b2e;
+  --accent2:#182f5c;
+  --accent-soft:#fff4df;
+  font-family:Arial,"Helvetica Neue",Helvetica,sans-serif;
+  font-size:18px;
+  line-height:1.92;
+  color:var(--ink);
+}
+.mscl-paper .wrap{max-width:1050px;}
+.mscl-paper .mscl-study-header h1 {color:#182f5c;}
+.mscl-paper .mscl-study-header .lead{color:#4b5567;font:400 clamp(18px,2vw,21px)/1.7 Arial,"Helvetica Neue",sans-serif;}
+.mscl-paper .mscl-study-header nav.toc a{color:#182f5c;}
+.mscl-paper p{line-height:1.92;}
+.mscl-paper li{line-height:1.85;}
+.mscl-paper h2{
+  color:#182f5c;
+  font-family:Georgia,"Times New Roman",serif;
+  font-weight:700;
+  margin-top:0;
+  margin-bottom:27px;
+}
+.mscl-paper h3:not(.sub){
+  font:700 23px/1.45 Arial,"Helvetica Neue",sans-serif;
+  color:#182f5c;
+  margin:55px 0 19px;
+}
+.mscl-paper h3.sub{
+  font:700 24px/1.42 Arial,"Helvetica Neue",sans-serif;
+  color:#182f5c;
+  border-left:4px solid #ff9b2e;
+  padding-left:15px;
+  margin:66px 0 25px;
+  scroll-margin-top:120px;
+}
+.mscl-paper section#s3 > h3.sub:first-of-type{margin-top:38px;}
+.mscl-paper h4{font:700 18px/1.5 Arial,"Helvetica Neue",sans-serif;color:#182f5c;margin-top:29px;}
+.mscl-paper section{margin-bottom:75px;}
+/* Appendix A1—A13 each start a new visual block, without changing the document outline. */
+.mscl-paper section.appendix > h3{
+  font:700 24px/1.42 Arial,"Helvetica Neue",sans-serif;
+  color:#182f5c;
+  margin:75px 0 24px;
+  padding:12px 0 0;
+  border-top:1px solid rgba(24,47,92,.18);
+  scroll-margin-top:122px;
+}
+.mscl-paper section.appendix > h3:first-of-type{margin-top:39px;border-top:0;padding-top:0;}
+/* All figure labels: navy bold titles, neutral descriptive captions. */
+.mscl-paper figcaption{
+  font:400 14px/1.75 Arial,"Helvetica Neue",sans-serif;
+  color:#4b5567;
+  margin-top:12px;
+}
+.mscl-paper figcaption .ft,
+.mscl-paper figcaption > strong,
+.mscl-paper figcaption > b{
+  display:block;
+  color:#182f5c;
+  font:800 15px/1.65 Arial,"Helvetica Neue",sans-serif;
+  margin-bottom:4px;
+}
+.mscl-paper figcaption .fd{color:#4b5567;}
+/* Preserve monospace numbers and math glyphs in formulas and charts. */
+.mscl-paper .eq math,.mscl-paper math{font-family:'STIX Two Math','Cambria Math','Times New Roman',serif;}
+.mscl-paper table{font-family:Arial,"Helvetica Neue",sans-serif;font-size:15px;}
+.mscl-paper th{background:#f0f0e6;color:#182f5c;}
+.mscl-paper .src,.mscl-paper .kicker{color:#182f5c;}
+.mscl-paper .applink a{background:#182f5c;color:#ffffea;border-color:#182f5c;}
+.mscl-paper .applink a:hover{background:#ff9b2e;color:#182f5c;}
+.mscl-paper .card,.mscl-paper .simwrap{color:#1a202c;}
+.mscl-paper .scen button{font-family:Arial,"Helvetica Neue",sans-serif;}
+@media(max-width:700px){
+  .mscl-paper{font-size:17px;line-height:1.85;}
+  .mscl-paper section{margin-bottom:55px;}
+  .mscl-paper h3.sub{font-size:21px;margin:50px 0 23px;}
+  .mscl-paper h3:not(.sub),.mscl-paper section.appendix > h3{font-size:21px;}
+  .mscl-paper section.appendix > h3{margin:58px 0 20px;}
+  .mscl-paper figcaption{font-size:13px;}
+  .mscl-paper figcaption .ft,.mscl-paper figcaption > strong,.mscl-paper figcaption > b{font-size:14px;}
+  .mscl-paper table{font-size:13px;}
+}
