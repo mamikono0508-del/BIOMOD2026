@@ -72,3 +72,33 @@ body .site-footer .footer-bottom{display:flex;align-items:center;justify-content
  body .site-footer .footer-nav{justify-content:flex-start}
  body .site-footer .aqs-footer-logo img{width:180px!important;max-width:180px!important;max-height:90px!important}
 }
+
+
+/* Accessibility: keep "Skip to content" hidden until keyboard focus. */
+body a.skip-link,
+body .skip-link {
+  position: fixed !important;
+  z-index: 10000 !important;
+  top: 12px !important;
+  left: 12px !important;
+  padding: 10px 16px !important;
+  background: #ffffea !important;
+  color: #182f5c !important;
+  border: 2px solid #182f5c !important;
+  border-radius: 4px !important;
+  font: 700 14px/1.4 Arial, sans-serif !important;
+  text-decoration: none !important;
+  transform: translateY(calc(-100% - 28px)) !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+body a.skip-link:focus,
+body a.skip-link:focus-visible,
+body .skip-link:focus,
+body .skip-link:focus-visible {
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  outline: 3px solid #ff9b2e !important;
+  outline-offset: 3px !important;
+}
