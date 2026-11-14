@@ -443,3 +443,6 @@ body.aqs-simulation-page .site-footer .aqs-footer-logo img {width:185px!importan
   .mscl-paper figcaption .ft,.mscl-paper figcaption > strong,.mscl-paper figcaption > b{font-size:14px;}
   .mscl-paper table{font-size:13px;}
 }
+
+/* Unified navy kicker in the study header. */
+.mscl-paper .mscl-study-header .kicker{color:#182f5c;}
