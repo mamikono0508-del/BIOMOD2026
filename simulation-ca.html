@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="aQtSOME — Ca2+ diffusion simulation, reaction–diffusion model with EGTA and BAPTA"><title>Ca²⁺ Diffusion Simulation | aQtSOME — BIOMOD 2026</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="simulation-ca.css?v=2"><script src="script.js" defer></script></head>
+<body class="aqs-simulation-page cad-body"><a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="header-inner">
+<a aria-label="aQtSOME home" class="brand aqs-logo-link" href="index.html">
+<img alt="aQtSOME logo" class="aqs-brand-image" onerror="this.hidden=true;this.nextElementSibling.hidden=false" src="assets/logo.png"/>
+<span class="aqs-logo-fallback" hidden="">aQtSOME<span class="aqs-orange">.</span></span>
+<span class="aqs-brand-caption">BIOMOD 2026</span></a>
+<button aria-controls="main-nav" aria-expanded="false" aria-label="Open navigation" class="menu-toggle" type="button"><span></span><span></span><span></span></button>
+<nav aria-label="Main navigation" class="nav" id="main-nav"><a href="index.html">Home</a>
+<a href="project.html">Project</a>
+<a href="design.html">Design</a>
+<a href="experiment.html">Experiment</a>
+<a aria-current="page" class="active" href="simulation.html"><svg aria-hidden="true" class="aqs-star" height="16" viewbox="0 0 24 24" width="16"><path d="M12 1.6 15.1 8.9 22.4 12 15.1 15.1 12 22.4 8.9 15.1 1.6 12 8.9 8.9Z" fill="currentColor"></path><circle cx="12" cy="12" fill="#ffffea" r="2"></circle></svg>Simulation</a>
+<a href="elsi.html">ELSI</a>
+<a href="member.html">Member</a></nav>
+</div></header>
+
+<main class="cad-page" id="main">
+<section class="cad-hero"><div class="cad-wrap"><a class="cad-back" href="simulation.html">← Back to Simulation</a><p class="cad-kicker">BIOMOD 2026 / aQtSOME / COMPUTATIONAL STUDY</p><h1>Ca²⁺ Diffusion<span>.</span></h1><p class="cad-subtitle">Exploring Buffer Conditions for Directional Control of Actin Polymerization Using Ca²⁺ Concentration Gradients</p><p class="cad-deck">How far does calcium spread after MscL opens, and can chelators preserve a localized activation zone?</p><div class="cad-hero-tags"><span>Free diffusion</span><span>EGTA</span><span>BAPTA</span></div></div></section>
+<nav class="cad-onpage" aria-label="On this page"><div class="cad-wrap cad-navinner"><span>ON THIS PAGE</span><a href="#objective">01 Objective</a><a href="#model">02 Model</a><a href="#conditions">03 Conditions</a><a href="#results">04 Results</a><a href="#discussion">05 Discussion</a><a href="#references">References</a></div></nav>
+<div class="cad-wrap cad-content"><section class="cad-section" id="objective"><div class="cad-section-head"><span class="cad-mark">✦</span><span class="cad-index">01</span><div><small>RESEARCH QUESTION</small><h2>Objective</h2></div></div>
+<p>If Ca²⁺ entering through an opened MscL channel diffuses too quickly throughout the liposome, actin polymerizes randomly over the entire membrane, and the direction of liposome movement cannot be controlled. In this simulation, we therefore calculate the concentration gradient formed when Ca²⁺ flows into the lumen, and examine whether calmodulin can be activated only within a limited region near the channel so that the direction of actin elongation can be controlled. We further examine whether adding a strong Ca²⁺ chelator to the lumen allows the elongation direction to be controlled more efficiently.</p>
+</section>
+<section class="cad-section" id="model"><div class="cad-section-head"><span class="cad-mark">✦</span><span class="cad-index">02</span><div><small>REACTION–DIFFUSION APPROACH</small><h2>Model</h2></div></div>
+<h3>Overview</h3><figure class="cad-figure cad-figure" id="figure-1">
+      <div class="cad-figure-frame"><img src="assets/simulation/ca/fig1.png" alt="Fig. 1: Use of Ca²⁺ signaling in aQtSOME (concept). Ca²⁺ entering through MscL activates calmodulin and induces local actin polymerization near the channel." loading="lazy" onload="this.nextElementSibling.hidden=true" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+        <div class="cad-placeholder" hidden><span class="cad-ph-star">✦</span><strong>Fig. 1</strong><small>Upload assets/simulation/ca/fig1.png</small></div></div>
+      <figcaption><strong>Fig. 1.</strong> Use of Ca²⁺ signaling in aQtSOME (concept). Ca²⁺ entering through MscL activates calmodulin and induces local actin polymerization near the channel.</figcaption>
+    </figure><figure class="cad-figure cad-figure" id="figure-2">
+      <div class="cad-figure-frame"><img src="assets/simulation/ca/fig2.png" alt="Fig. 2: Schematic of the simulation model. Ca²⁺ flows from the external solution into the GUV lumen through an open MscL channel and diffuses." loading="lazy" onload="this.nextElementSibling.hidden=true" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+        <div class="cad-placeholder" hidden><span class="cad-ph-star">✦</span><strong>Fig. 2</strong><small>Upload assets/simulation/ca/fig2.png</small></div></div>
+      <figcaption><strong>Fig. 2.</strong> Schematic of the simulation model. Ca²⁺ flows from the external solution into the GUV lumen through an open MscL channel and diffuses.</figcaption>
+    </figure>
+<p>The pore diameter of open MscL is 3–4 nm, which is sufficiently small compared with a liposome 20 µm in diameter. Membrane curvature can therefore be neglected near the channel, and we treat the membrane as a plane through which Ca²⁺ enters from the external (bulk) solution via a single channel (Figure 2). To simplify the model, only one MscL channel is assumed to be open, and the calculation is performed in two-dimensional space.</p>
+<h3>Assumption for concentration-field formation</h3>
+<p>MscL opens in response to tension applied to the lipid bilayer. Because the membrane in this system is composed of the unsaturated lipids DOPC and DOPS, it is in the liquid-crystalline phase <a href="#ref-1">[1]</a> and readily follows tension-induced deformation. We therefore assume that MscL remains open while a local force is applied, and that Ca²⁺ continues to flow in at a rate sufficient to form a concentration field.</p>
+<h3>Chelator reactions</h3><figure class="cad-figure cad-equation" id="equation-1">
+      <div class="cad-figure-frame"><img src="assets/simulation/ca/eq1.png" alt="Equation 1: Binding reaction of Ca²⁺ with EGTA." loading="lazy" onload="this.nextElementSibling.hidden=true" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+        <div class="cad-placeholder" hidden><span class="cad-ph-star">✦</span><strong>Equation 1</strong><small>Upload assets/simulation/ca/eq1.png</small></div></div>
+      <figcaption><strong>Equation 1.</strong> Binding reaction of Ca²⁺ with EGTA.</figcaption>
+    </figure><figure class="cad-figure cad-equation" id="equation-2">
+      <div class="cad-figure-frame"><img src="assets/simulation/ca/eq2.png" alt="Equation 2: Binding reaction of Ca²⁺ with BAPTA." loading="lazy" onload="this.nextElementSibling.hidden=true" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+        <div class="cad-placeholder" hidden><span class="cad-ph-star">✦</span><strong>Equation 2</strong><small>Upload assets/simulation/ca/eq2.png</small></div></div>
+      <figcaption><strong>Equation 2.</strong> Binding reaction of Ca²⁺ with BAPTA.</figcaption>
+    </figure><p>Here, <code>k<sub>on</sub></code> and <code>k<sub>off</sub></code> are the association and dissociation rate constants, respectively.</p>
+<h3>Governing equations</h3><figure class="cad-figure cad-equation" id="equation-3">
+      <div class="cad-figure-frame"><img src="assets/simulation/ca/eq3.png" alt="Equation 3: Reaction–diffusion equations for Ca²⁺ and Ca²⁺-bound chelators (CaEGTA, CaBAPTA)." loading="lazy" onload="this.nextElementSibling.hidden=true" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+        <div class="cad-placeholder" hidden><span class="cad-ph-star">✦</span><strong>Equation 3</strong><small>Upload assets/simulation/ca/eq3.png</small></div></div>
+      <figcaption><strong>Equation 3.</strong> Reaction–diffusion equations for Ca²⁺ and Ca²⁺-bound chelators (CaEGTA, CaBAPTA).</figcaption>
+    </figure><figure class="cad-figure cad-equation" id="equation-4">
+      <div class="cad-figure-frame"><img src="assets/simulation/ca/eq4.png" alt="Equation 4: Reaction term in the presence of EGTA." loading="lazy" onload="this.nextElementSibling.hidden=true" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+        <div class="cad-placeholder" hidden><span class="cad-ph-star">✦</span><strong>Equation 4</strong><small>Upload assets/simulation/ca/eq4.png</small></div></div>
+      <figcaption><strong>Equation 4.</strong> Reaction term in the presence of EGTA.</figcaption>
+    </figure><figure class="cad-figure cad-equation" id="equation-5">
+      <div class="cad-figure-frame"><img src="assets/simulation/ca/eq5.png" alt="Equation 5: Reaction term in the presence of BAPTA." loading="lazy" onload="this.nextElementSibling.hidden=true" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+        <div class="cad-placeholder" hidden><span class="cad-ph-star">✦</span><strong>Equation 5</strong><small>Upload assets/simulation/ca/eq5.png</small></div></div>
+      <figcaption><strong>Equation 5.</strong> Reaction term in the presence of BAPTA.</figcaption>
+    </figure><p>Ca²⁺ entering the lumen and the Ca²⁺-bound chelator (CaEGTA or CaBAPTA) diffuse according to the reaction–diffusion equations in Equation 3. <code>R</code> is the reaction term: <code>R = 0</code> for free diffusion without a chelator, and it is given by Equations 4 and 5 for the systems containing EGTA and BAPTA, respectively.</p>
+</section>
+<section class="cad-section" id="conditions"><div class="cad-section-head"><span class="cad-mark">✦</span><span class="cad-index">03</span><div><small>PARAMETERS AND TEST CASES</small><h2>Simulation conditions</h2></div></div>
+<p>At a calmodulin concentration of 1 µM, actin polymerization has been reported to begin at a Ca²⁺ concentration of <strong>240 nM</strong> <a href="#ref-2">[2]</a>. We therefore used 240 nM as the threshold for calmodulin activation (onset of actin polymerization). The same study also reported that the amount of polymerized actin reaches its maximum at 30 s <a href="#ref-2">[2]</a>, so we used <strong>30 s</strong> as the evaluation time.</p>
+<p>The external Ca²⁺ concentration was set to 500 nM for 1 µM calmodulin, based on an experiment performed with 100 nM calmodulin and 50 nM Ca²⁺ and keeping the same ratio.</p>
+<p>The target region in which INF2 should be locally activated was defined as within a radius of 5 µm from the channel.</p>
+<div class="cad-metrics"><div><span>ACTIVATION THRESHOLD</span><strong>240 nM</strong><small>Free Ca²⁺</small></div><div><span>EVALUATION TIME</span><strong>30 s</strong><small>Model checkpoint</small></div><div><span>TARGET RADIUS</span><strong>5 µm</strong><small>From MscL</small></div></div><figure class="cad-figure cad-table" id="table-1">
+      <div class="cad-figure-frame"><img src="assets/simulation/ca/table1.png" alt="Table 1: Physical parameters and numerical settings." loading="lazy" onload="this.nextElementSibling.hidden=true" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+        <div class="cad-placeholder" hidden><span class="cad-ph-star">✦</span><strong>Table 1</strong><small>Upload assets/simulation/ca/table1.png</small></div></div>
+      <figcaption><strong>Table 1.</strong> Physical parameters and numerical settings.</figcaption>
+    </figure><figure class="cad-figure cad-table" id="table-2">
+      <div class="cad-figure-frame"><img src="assets/simulation/ca/table2.png" alt="Table 2: Plot settings for the result figures (Figures 3–5)." loading="lazy" onload="this.nextElementSibling.hidden=true" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+        <div class="cad-placeholder" hidden><span class="cad-ph-star">✦</span><strong>Table 2</strong><small>Upload assets/simulation/ca/table2.png</small></div></div>
+      <figcaption><strong>Table 2.</strong> Plot settings for the result figures (Figures 3–5).</figcaption>
+    </figure>
+<div class="cad-condition-grid"><article><span>CONDITION 01</span><h3>Free diffusion</h3><p>One MscL channel opens, and Ca²⁺ diffuses freely in a lumen containing no chelator.</p></article><article><span>CONDITION 02</span><h3>With EGTA</h3><p>One MscL channel opens, and the incoming Ca²⁺ is chelated by EGTA (1 mM) uniformly distributed in the lumen.</p></article><article><span>CONDITION 03</span><h3>With BAPTA</h3><p>BAPTA (1 mM), which binds Ca²⁺ faster than EGTA, is used. All other conditions are the same as in Condition 2.</p></article></div><figure class="cad-figure cad-table" id="table-3">
+      <div class="cad-figure-frame"><img src="assets/simulation/ca/table3.png" alt="Table 3: Rate constants and dissociation constants of the chelators." loading="lazy" onload="this.nextElementSibling.hidden=true" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+        <div class="cad-placeholder" hidden><span class="cad-ph-star">✦</span><strong>Table 3</strong><small>Upload assets/simulation/ca/table3.png</small></div></div>
+      <figcaption><strong>Table 3.</strong> Rate constants and dissociation constants of the chelators.</figcaption>
+    </figure></section>
+<section class="cad-section" id="results"><div class="cad-section-head"><span class="cad-mark">✦</span><span class="cad-index">04</span><div><small>MODELED CONCENTRATION FIELDS</small><h2>Results</h2></div></div>
+<h3>Condition 1: Free diffusion</h3><figure class="cad-figure cad-figure" id="figure-3">
+      <div class="cad-figure-frame"><img src="assets/simulation/ca/fig3.png" alt="Fig. 3: Time course of free Ca²⁺ concentration at each distance r under free diffusion. Horizontal axis: time t [ms]; vertical axis: free Ca²⁺ concentration [µM] (both logarithmic). The red dashed line indicates the 240 nM threshold, and the black dotted lines indicate the long-time asymptotic approximation." loading="lazy" onload="this.nextElementSibling.hidden=true" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+        <div class="cad-placeholder" hidden><span class="cad-ph-star">✦</span><strong>Fig. 3</strong><small>Upload assets/simulation/ca/fig3.png</small></div></div>
+      <figcaption><strong>Fig. 3.</strong> Time course of free Ca²⁺ concentration at each distance r under free diffusion. Horizontal axis: time t [ms]; vertical axis: free Ca²⁺ concentration [µM] (both logarithmic). The red dashed line indicates the 240 nM threshold, and the black dotted lines indicate the long-time asymptotic approximation.</figcaption>
+    </figure>
+<p>Figure 3 shows the time course of free Ca²⁺ concentration at distances r = 10 nm, 100 nm, 1 µm, 5 µm, and 10 µm from MscL. At every r, the concentration rose sharply, then increased more slowly and approached the external concentration of 0.5 µM. At t = 30 s, the concentration was below 240 nM at r = 5 µm and 10 µm, and at or above 240 nM at closer positions (r ≤ 1 µm).</p>
+<h3>Condition 2: With EGTA</h3><figure class="cad-figure cad-figure" id="figure-4">
+      <div class="cad-figure-frame"><img src="assets/simulation/ca/fig4.png" alt="Fig. 4: Time course of free Ca²⁺ concentration at each distance r in the presence of EGTA (1 mM). Solid lines: with EGTA; dotted lines: without EGTA (free diffusion). Axes and the red dashed line are the same as in Figure 3." loading="lazy" onload="this.nextElementSibling.hidden=true" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+        <div class="cad-placeholder" hidden><span class="cad-ph-star">✦</span><strong>Fig. 4</strong><small>Upload assets/simulation/ca/fig4.png</small></div></div>
+      <figcaption><strong>Fig. 4.</strong> Time course of free Ca²⁺ concentration at each distance r in the presence of EGTA (1 mM). Solid lines: with EGTA; dotted lines: without EGTA (free diffusion). Axes and the red dashed line are the same as in Figure 3.</figcaption>
+    </figure>
+<p>Figure 4 shows the time course of free Ca²⁺ concentration at the same distances as in Figure 3. At every r, the concentration rose sharply and then settled to a constant value. This plateau value decreased with increasing r and was below 240 nM for r ≥ 100 nm. At t = 30 s, <strong>only r = 10 nm exceeded 240 nM</strong>; all positions farther away were below 240 nM.</p>
+<h3>Condition 3: With BAPTA</h3><figure class="cad-figure cad-figure" id="figure-5">
+      <div class="cad-figure-frame"><img src="assets/simulation/ca/fig5.png" alt="Fig. 5: Time course of free Ca²⁺ concentration at each distance r in the presence of BAPTA (1 mM). Solid lines: with BAPTA; dotted lines: without BAPTA (free diffusion). Axes and the red dashed line are the same as in Figure 3." loading="lazy" onload="this.nextElementSibling.hidden=true" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+        <div class="cad-placeholder" hidden><span class="cad-ph-star">✦</span><strong>Fig. 5</strong><small>Upload assets/simulation/ca/fig5.png</small></div></div>
+      <figcaption><strong>Fig. 5.</strong> Time course of free Ca²⁺ concentration at each distance r in the presence of BAPTA (1 mM). Solid lines: with BAPTA; dotted lines: without BAPTA (free diffusion). Axes and the red dashed line are the same as in Figure 3.</figcaption>
+    </figure>
+<p>Figure 5 shows the corresponding time course. As with EGTA, the concentration at every r rose sharply and then settled to a constant value, which decreased with increasing r. The plateau was below 240 nM for r ≥ 100 nm. At t = 30 s, only r = 10 nm reached approximately 240 nM, and all positions farther away were below 240 nM.</p>
+</section>
+<section class="cad-section" id="discussion"><div class="cad-section-head"><span class="cad-mark">✦</span><span class="cad-index">05</span><div><small>INTERPRETATION AND LIMITATIONS</small><h2>Discussion</h2></div></div>
+<p>Under free diffusion, at t = 30 s the threshold of 240 nM was reached at r ≤ 1 µm but not at r ≥ 5 µm. In other words, the region above threshold was confined to within a few micrometers of the channel, which roughly matches the target region (radius 5 µm). Calmodulin may therefore be activated only within the target region, causing local actin polymerization that could control the direction of liposome movement. In contrast, with EGTA or BAPTA, the threshold was exceeded only in the immediate vicinity of the channel (r ≈ 10 nm), and positions at r ≥ 100 nm did not reach 240 nM by the end of the simulation (1000 s, about 17 min).</p>
+<p>With EGTA or BAPTA uniformly added to the lumen, the concentration curves approached constant values. This can be interpreted as follows. Incoming Ca²⁺ binds to the chelator near the channel, and the resulting Ca²⁺-bound chelator diffuses away from the channel, while free chelator diffuses from the surroundings toward the channel. Following Le Chatelier's principle, the binding–dissociation equilibrium is maintained until the whole system reaches a uniform concentration; during this period, Ca²⁺ influx and removal are balanced, producing a quasi-steady state. As a result, while the quasi-steady state persists, positions that never reach the 240 nM threshold are separated from positions closer to MscL where actin polymerization begins. This difference in whether and when polymerization starts could be used to control local actin polymerization. In the free-diffusion system, by contrast, there is no mechanism that removes Ca²⁺, so unlike the chelator-containing systems, the concentration curves continued to rise until the end of the simulation.</p>
+<div class="cad-caveat"><span>MODEL LIMITATION</span><p>Note that this model is a <strong>two-dimensional model</strong> that approximates the spherical membrane as a plane and assumes an unbounded rather than a closed space. It therefore does not accurately reproduce behavior inside an actual liposome. These results are intended as order-of-magnitude estimates for exploring biochemical conditions.</p></div>
+</section>
+<section class="cad-section" id="references"><div class="cad-section-head"><span class="cad-mark">✦</span><span class="cad-index">06</span><div><small>SOURCES</small><h2>References</h2></div></div>
+<p class="cad-ref" id="ref-1"><strong>[1]</strong> Hodel AW, Rudd-Schmidt JA, Trapani JA, Voskoboinik I, Hoogenboom BW. Lipid specificity of the immune effector perforin. <em>Faraday Discuss.</em> 2021;232:236–255. <a href="https://doi.org/10.1039/d0fd00043d" target="_blank" rel="noopener noreferrer">https://doi.org/10.1039/d0fd00043d</a></p>
+<p class="cad-ref" id="ref-2"><strong>[2]</strong> Lee M, Jalmukhambetova A, Burgin TE, Higgs HN. Regulation of the formin INF2 by actin monomers and calcium/calmodulin. <em>J Cell Biol.</em> 2026;225(2):e202507147. <a href="https://doi.org/10.1083/jcb.202507147" target="_blank" rel="noopener noreferrer">https://doi.org/10.1083/jcb.202507147</a></p></section></div>
+<div class="cad-wrap cad-bottom"><a href="simulation.html">← Back to Simulation</a></div>
+</main><footer class="site-footer"><div class="footer-inner">
+<div class="footer-top"><div class="aqs-footer-identity"><a aria-label="aQtSOME home" class="aqs-footer-logo" href="index.html"><img alt="aQtSOME logo" onerror="this.hidden=true;this.nextElementSibling.hidden=false" src="assets/logo.png"/><span class="aqs-footer-fallback" hidden="">aQtSOME<span>.</span></span></a><p>BIOMOD 2026 · Research Wiki</p></div>
+<nav aria-label="Footer navigation" class="footer-nav"><a href="index.html">Home</a>
+<a href="project.html">Project</a>
+<a href="design.html">Design</a>
+<a href="experiment.html">Experiment</a>
+<a aria-current="page" href="simulation.html">Simulation</a>
+<a href="elsi.html">ELSI</a>
+<a href="member.html">Member</a></nav></div>
+<div class="footer-bottom"><span>© 2026 aQtSOME</span><span>Kyushu University · BIOMOD 2026</span></div>
+</div></footer>
+</body></html>
+
+</body></html>

@@ -47,3 +47,7 @@ body.aqs-simulation-page .site-footer .footer-bottom{font-size:13px}
 @media(max-width:920px){body.aqs-simulation-page .site-header .header-inner{min-height:95px}}
 @media(max-width:700px){.sim-page{font-size:17px}.sim-page .sim-shell{padding:0 20px}.sim-page .sim-hero{padding:55px 0 48px}.sim-page .sim-section{padding:50px 0}.sim-page .sim-heading{gap:10px}.sim-page .sim-number{font-size:20px}.sim-page .sim-mark{font-size:19px}.sim-page .sim-data-three{grid-template-columns:1fr}.sim-page .sim-link-block{align-items:flex-start;flex-direction:column}.sim-page .sim-coming{white-space:normal}body.aqs-simulation-page .site-header .aqs-brand-image{width:185px!important;height:70px!important}body.aqs-simulation-page .site-footer .aqs-footer-logo img{width:185px!important;height:70px!important}}
 @media(max-width:480px){.sim-page .sim-data{grid-template-columns:1fr}.sim-page .sim-heading h2{font-size:25px}}
+
+/* Link to Ca2+ diffusion detailed page */
+.sim-page .sim-detail-link{color:#182f5c;text-decoration:none;border-style:solid;border-color:#ff9b2e;background:#fffef6}
+.sim-page .sim-detail-link:hover{background:#ffefcf}

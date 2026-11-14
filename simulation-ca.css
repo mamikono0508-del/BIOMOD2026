@@ -1,0 +1,65 @@
+/* aQtSOME Ca diffusion detailed report — page-scoped only */
+.cad-page{--navy:#182f5c;--orange:#ff9b2e;--paper:#ffffea;--rule:rgba(24,47,92,.17);background:var(--paper);color:#1a202c;font:18px/1.9 Arial,"Helvetica Neue",sans-serif}
+.cad-page *{box-sizing:border-box}
+.cad-page .cad-wrap{width:min(100%,1080px);margin-inline:auto;padding-inline:32px}
+.cad-page .cad-hero{border-bottom:1px solid var(--rule);padding:56px 0 67px;background:linear-gradient(125deg,#ffffea 45%,#f4f3e4)}
+.cad-page .cad-back{display:inline-block;margin-bottom:38px;text-decoration:none;color:var(--navy);font-weight:700;font-size:14px}
+.cad-page .cad-back:hover{text-decoration:underline;text-decoration-color:var(--orange);text-underline-offset:5px}
+.cad-page .cad-kicker{font-size:12px;font-weight:800;letter-spacing:.15em;color:var(--navy)}
+.cad-page h1{font:700 clamp(51px,7.5vw,92px)/1.08 Georgia,serif;color:var(--navy);letter-spacing:-.055em;margin:15px 0 20px}
+.cad-page h1 span{color:var(--orange)}
+.cad-page .cad-subtitle{font-weight:700;color:var(--navy);font-size:clamp(21px,2.7vw,28px);line-height:1.4;max-width:840px;margin:0 0 12px}
+.cad-page .cad-deck{max-width:830px;color:#586173;margin:0}
+.cad-page .cad-hero-tags{margin-top:26px;display:flex;gap:9px;flex-wrap:wrap}
+.cad-page .cad-hero-tags span{border:1px solid var(--rule);background:#fffdf3;color:var(--navy);font-weight:700;font-size:12px;padding:4px 13px}
+.cad-page .cad-onpage{border-bottom:1px solid var(--rule);background:var(--paper)}
+.cad-page .cad-navinner{display:flex;gap:13px 23px;flex-wrap:wrap;align-items:center;padding-block:16px}
+.cad-page .cad-navinner>span{font-size:11px;letter-spacing:.13em;font-weight:800;color:#697386}
+.cad-page .cad-navinner a{font-weight:700;font-size:13px;color:var(--navy);text-decoration:none}
+.cad-page .cad-navinner a:hover{text-decoration:underline;text-decoration-color:var(--orange)}
+.cad-page .cad-section{padding:64px 0 65px;border-bottom:1px solid var(--rule);scroll-margin-top:30px}
+.cad-page .cad-section-head{display:flex;align-items:flex-start;gap:14px;margin:0 0 30px}
+.cad-page .cad-mark{color:var(--orange);font-size:23px;line-height:1;margin-top:7px}
+.cad-page .cad-index{font:700 26px/1.2 Georgia,serif;color:var(--navy);margin-top:2px}
+.cad-page .cad-section-head small{font-size:11px;letter-spacing:.15em;color:#637080;font-weight:800}
+.cad-page .cad-section h2{font:700 clamp(29px,3.2vw,38px)/1.24 Arial,sans-serif;margin:2px 0 0;color:var(--navy)}
+.cad-page .cad-section h3{font:700 23px/1.4 Arial,sans-serif;color:var(--navy);margin:45px 0 14px}
+.cad-page .cad-section>p{max-width:930px;margin:0 0 24px}
+.cad-page strong{color:var(--navy);font-weight:800}
+.cad-page a{overflow-wrap:anywhere}
+.cad-page .cad-figure{margin:30px 0 38px;max-width:930px}
+.cad-page .cad-figure-frame{border:1px solid var(--rule);background:#fffef6;padding:16px;min-height:220px}
+.cad-page .cad-figure-frame>img{width:auto;max-width:100%;max-height:710px;height:auto;object-fit:contain;display:block;margin-inline:auto}
+.cad-page .cad-placeholder{min-height:250px;display:flex;align-items:center;justify-content:center;gap:7px;flex-direction:column;text-align:center;color:var(--navy);background:#fcfbf2}
+.cad-page .cad-placeholder[hidden]{display:none!important}
+.cad-page .cad-ph-star{font-size:32px;color:var(--orange)}
+.cad-page .cad-placeholder small{font-size:12px;color:#657185}
+.cad-page .cad-figure figcaption{font-size:15px;line-height:1.7;margin:12px 2px 0;color:#1a202c}
+.cad-page .cad-figure figcaption strong{color:var(--navy)}
+.cad-page .cad-equation .cad-figure-frame{min-height:110px}
+.cad-page .cad-equation .cad-placeholder{min-height:125px}
+.cad-page .cad-table .cad-placeholder{min-height:140px}
+.cad-page .cad-table .cad-figure-frame{min-height:150px}
+.cad-page .cad-metrics,.cad-page .cad-condition-grid{max-width:930px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin:30px 0 32px}
+.cad-page .cad-metrics>div,.cad-page .cad-condition-grid>article{background:#fffef6;border:1px solid var(--rule);padding:21px 18px;min-width:0}
+.cad-page .cad-metrics>div{display:flex;flex-direction:column;gap:6px}
+.cad-page .cad-metrics span,.cad-page .cad-condition-grid>article>span{font-size:10px;letter-spacing:.13em;font-weight:800;color:#646f7e}
+.cad-page .cad-metrics strong{font:700 33px/1.2 Georgia,serif;color:var(--navy)}
+.cad-page .cad-metrics small{font-size:12px;color:#697386}
+.cad-page .cad-condition-grid h3{margin:10px 0;font-size:20px}
+.cad-page .cad-condition-grid p{font-size:15px;line-height:1.75;margin:0}
+.cad-page .cad-caveat{margin:30px 0;background:#f1f1e6;border-left:4px solid var(--orange);padding:20px 24px;max-width:930px}
+.cad-page .cad-caveat span{display:block;letter-spacing:.16em;font-size:11px;font-weight:800;color:var(--navy);margin-bottom:9px}
+.cad-page .cad-caveat p{margin:0;font-size:16px;line-height:1.8}
+.cad-page .cad-ref{font-size:15px;line-height:1.8;padding-left:40px;text-indent:-40px;overflow-wrap:anywhere}
+.cad-page .cad-bottom{padding-block:42px 65px}
+.cad-page .cad-bottom a{font-weight:700;color:var(--navy);text-decoration:none}
+/* shared header/footer: use same sizing as Simulation index */
+body.cad-body .site-header .aqs-logo-link{max-width:none;min-width:0;display:flex;flex-direction:column;justify-content:center;min-height:85px}
+body.cad-body .site-header .aqs-brand-image{width:235px!important;height:86px!important;max-width:none!important;max-height:none!important;object-fit:contain;object-position:left center}
+body.cad-body .site-header .header-inner{min-height:110px}
+body.cad-body .site-header .aqs-brand-caption{font-size:11px;letter-spacing:.19em;font-weight:700;color:#182f5c}
+body.cad-body .site-header .nav a{font-size:15px}
+body.cad-body .site-header .nav svg{width:16px!important;height:16px!important;max-height:16px!important;max-width:16px!important;vertical-align:middle;flex:0 0 16px}
+body.cad-body .site-footer .aqs-footer-logo img{width:235px!important;height:86px!important;max-width:none!important;max-height:none!important;object-fit:contain;object-position:left center}
+@media(max-width:750px){.cad-page{font-size:17px}.cad-page .cad-wrap{padding-inline:20px}.cad-page .cad-hero{padding-block:42px 52px}.cad-page .cad-section{padding-block:50px}.cad-page .cad-metrics,.cad-page .cad-condition-grid{grid-template-columns:1fr}.cad-page .cad-figure-frame{padding:8px}.cad-page .cad-section-head{gap:10px}.cad-page .cad-section h3{font-size:21px}body.cad-body .site-header .aqs-brand-image,body.cad-body .site-footer .aqs-footer-logo img{width:185px!important;height:70px!important}}
