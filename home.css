@@ -23,11 +23,11 @@ body.aqs-home-page .hm-hero:before{content:"";position:absolute;inset:0;backgrou
 body.aqs-home-page .hm-hero-orbit{position:absolute;border:1px solid rgba(255,255,234,.105);border-radius:50%;width:840px;height:840px;right:-255px;top:-160px;pointer-events:none;z-index:-1}
 body.aqs-home-page .hm-orbit-two{width:580px;height:580px;right:-120px;top:-30px;border-color:rgba(255,155,46,.24)}
 body.aqs-home-page .hm-hero-watermark{position:absolute;width:320px;height:320px;right:-135px;bottom:-120px;color:rgba(255,155,46,.065);transform:rotate(28deg);pointer-events:none;z-index:-1}
-body.aqs-home-page .hm-hero-shell{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);align-items:center;gap:clamp(28px,4vw,64px);padding-top:clamp(62px,7vw,105px);padding-bottom:clamp(64px,6vw,96px);min-height:730px}
+body.aqs-home-page .hm-hero-shell{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);align-items:center;gap:clamp(52px,5.5vw,90px);padding-top:clamp(62px,7vw,105px);padding-bottom:clamp(64px,6vw,96px);min-height:730px}
 body.aqs-home-page .hm-overline{margin:0;display:flex;gap:13px;align-items:center;font:800 11px/1.4 Arial,sans-serif;letter-spacing:.22em;color:#f7c687}
 body.aqs-home-page .hm-overline-rule{width:28px;height:2px;background:var(--hm-orange)}
 body.aqs-home-page .hm-ninja-tick{font-size:17px;color:var(--hm-orange)}
-body.aqs-home-page .hm-name{font:900 clamp(86px,9.5vw,166px)/.91 Arial,Helvetica,sans-serif;letter-spacing:-.085em;color:var(--hm-paper);margin:27px 0 32px;white-space:nowrap}
+body.aqs-home-page .hm-name{font:900 clamp(82px,8.9vw,154px)/.91 Arial,Helvetica,sans-serif;letter-spacing:-.085em;color:var(--hm-paper);margin:27px 0 32px;white-space:nowrap}
 body.aqs-home-page .hm-name span,body.aqs-home-page .hm-hero-title>span{color:var(--hm-orange)}
 body.aqs-home-page .hm-hero-pretitle{font:800 11px/1.5 Arial,sans-serif;letter-spacing:.24em;color:#ffc77c;margin:0 0 18px}
 body.aqs-home-page .hm-hero-title{font:700 clamp(31px,3.7vw,58px)/1.14 Georgia,"Yu Mincho",serif;letter-spacing:-.045em;color:var(--hm-paper);margin:0 0 27px}
@@ -39,7 +39,7 @@ body.aqs-home-page .hm-cta{display:inline-flex;align-items:center;justify-conten
 body.aqs-home-page .hm-cta:hover{transform:translateY(-2px);background:#ffd193}
 body.aqs-home-page .hm-cta span{font-size:22px;line-height:1}
 body.aqs-home-page .hm-text-link{font-size:13px;font-weight:800;color:var(--hm-paper);text-underline-offset:5px;text-decoration-color:var(--hm-orange)}
-body.aqs-home-page .hm-hero-result{margin:0;min-width:0;border:1px solid rgba(255,255,234,.34);background:rgba(255,255,234,.055);padding:17px;box-shadow:18px 20px 0 rgba(255,155,46,.1);position:relative;transform:rotate(1deg)}
+body.aqs-home-page .hm-hero-result{margin:0 0 0 clamp(14px,2.3vw,35px);min-width:0;border:1px solid rgba(255,255,234,.34);background:rgba(255,255,234,.055);padding:17px;box-shadow:18px 20px 0 rgba(255,155,46,.1);position:relative;transform:rotate(1deg)}
 body.aqs-home-page .hm-hero-result:before,body.aqs-home-page .hm-hero-result:after{content:"";position:absolute;width:19px;height:19px;border-color:var(--hm-orange);border-style:solid;pointer-events:none}
 body.aqs-home-page .hm-hero-result:before{top:-2px;left:-2px;border-width:3px 0 0 3px}
 body.aqs-home-page .hm-hero-result:after{right:-2px;bottom:-2px;border-width:0 3px 3px 0}
@@ -70,28 +70,26 @@ body.aqs-home-page .hm-section-intro{max-width:880px;margin-bottom:50px}
 body.aqs-home-page .hm-section-intro h2,body.aqs-home-page .hm-video-copy h2{font:700 clamp(42px,5.8vw,77px)/1.12 Georgia,serif;letter-spacing:-.05em;color:var(--hm-navy);margin:20px 0}
 body.aqs-home-page .hm-section-intro h2 em,body.aqs-home-page .hm-video-copy h2 em{font-style:italic;font-weight:400}
 body.aqs-home-page .hm-section-intro>p{margin:0;color:var(--hm-muted);font-size:18px}
-/* The four scrolling schematics */
+/* Four independent scroll sections; each visual is beside its own text. */
 body.aqs-home-page .hm-story{padding:clamp(78px,8vw,124px) 0 88px;background:#f4f5ed;position:relative}
-body.aqs-home-page .hm-story-grid{display:grid;grid-template-columns:minmax(0,.79fr) minmax(0,1.21fr);gap:clamp(25px,5vw,80px);align-items:start}
-body.aqs-home-page .hm-story-steps{min-width:0}
-body.aqs-home-page .hm-story-step{display:flex;flex-direction:column;justify-content:center;min-height:440px;border-top:1px solid var(--hm-line);padding:44px 12px 55px 0;opacity:.72;transition:opacity .35s ease}
+body.aqs-home-page .hm-story-grid{display:block}
+body.aqs-home-page .hm-story-steps{width:100%;min-width:0}
+body.aqs-home-page .hm-story-step{
+  display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);
+  grid-template-rows:auto auto 1fr;column-gap:clamp(44px,6vw,88px);
+  align-items:start;align-content:center;min-height:520px;
+  border-top:1px solid var(--hm-line);padding:72px 0;
+  opacity:1;
+}
 body.aqs-home-page .hm-story-step:last-child{border-bottom:1px solid var(--hm-line)}
-body.aqs-home-page .hm-story-step.is-active{opacity:1}
-body.aqs-home-page .hm-step-index{display:flex;gap:17px;align-items:center;font:800 11px Arial,sans-serif;letter-spacing:.17em;color:#8a5c27}
+body.aqs-home-page .hm-step-index{grid-column:1;grid-row:1;display:flex;gap:17px;align-items:center;font:800 11px Arial,sans-serif;letter-spacing:.17em;color:#8a5c27}
 body.aqs-home-page .hm-step-index>span:first-child{font-size:38px;line-height:1;color:var(--hm-orange)}
 body.aqs-home-page .hm-step-line{width:40px;height:1px;background:#e1b178}
-body.aqs-home-page .hm-story-step h3{font:700 clamp(28px,3.2vw,42px)/1.2 Georgia,serif;letter-spacing:-.035em;color:var(--hm-navy);margin:22px 0 15px}
-body.aqs-home-page .hm-story-step>p{max-width:375px;font-size:17px;line-height:1.85;color:#4a5565;margin:0}
-body.aqs-home-page .hm-stage-column{position:relative;align-self:stretch}
-body.aqs-home-page .hm-sticky-stage{position:sticky;top:calc(105px + 22px);height:min(620px,calc(100vh - 150px));min-height:440px;border:1px solid rgba(24,47,92,.22);background:#ffffea;box-shadow:15px 15px 0 rgba(24,47,92,.05);overflow:hidden;isolation:isolate}
-body.aqs-home-page .hm-sticky-stage:after{content:"";pointer-events:none;position:absolute;right:7px;top:7px;width:28px;height:28px;border-right:3px solid #ff9b2e;border-top:3px solid #ff9b2e;z-index:5}
-body.aqs-home-page .hm-stage-slide{display:flex;flex-direction:column;position:absolute;inset:0;padding:19px;opacity:0;visibility:hidden;transform:translateY(15px) scale(.985);transition:opacity .45s ease,transform .45s ease,visibility .45s;pointer-events:none}
-body.aqs-home-page .hm-stage-slide.is-active{opacity:1;visibility:visible;transform:none;pointer-events:auto;z-index:1}
-body.aqs-home-page .hm-stage-top{display:flex;align-items:center;justify-content:space-between;color:#182f5c;font:800 10px Arial,sans-serif;letter-spacing:.16em;padding:0 1px 15px}
-body.aqs-home-page .hm-stage-image{flex:1;min-height:0;aspect-ratio:auto;border-color:rgba(24,47,92,.11)}
-body.aqs-home-page .hm-stage-bottom{display:flex;justify-content:space-between;gap:10px;align-items:center;min-height:61px;font:800 10px Arial,sans-serif;letter-spacing:.09em;color:#6b7280}
-body.aqs-home-page .hm-stage-bottom strong{font:700 22px Georgia,serif;letter-spacing:-.03em;color:var(--hm-navy)}
-body.aqs-home-page .hm-mobile-shot{display:none}
+body.aqs-home-page .hm-story-step h3{grid-column:1;grid-row:2;font:700 clamp(28px,3.2vw,42px)/1.2 Georgia,serif;letter-spacing:-.035em;color:var(--hm-navy);margin:22px 0 15px}
+body.aqs-home-page .hm-story-step>p{grid-column:1;grid-row:3;max-width:450px;font-size:17px;line-height:1.85;color:#4a5565;margin:0}
+body.aqs-home-page .hm-story-step .hm-mobile-shot{display:block;grid-column:2;grid-row:1/4;min-width:0;margin:0;align-self:center;opacity:1}
+body.aqs-home-page .hm-mobile-shot .hm-image-slot{min-height:330px;aspect-ratio:4/3;box-shadow:12px 12px 0 rgba(24,47,92,.055)}
+body.aqs-home-page .hm-mobile-shot figcaption{font-size:13px;line-height:1.65;color:#657081;margin-top:13px}
 body.aqs-home-page .hm-story-disclaimer{max-width:950px;color:#68717f;font-size:13px;line-height:1.7;border-left:3px solid var(--hm-orange);padding-left:16px;margin:55px 0 0}
 /* Abstract */
 body.aqs-home-page .hm-abstract{background:var(--hm-paper);padding:clamp(78px,9vw,130px) 0}
@@ -146,18 +144,18 @@ body.aqs-home-page .hm-endline .hm-shuriken{width:26px;height:26px;color:#ce8c3b
  body.aqs-home-page.hm-motion-ready .hm-reveal{transition:opacity .7s ease,transform .7s ease}
  body.aqs-home-page.hm-motion-ready .hm-reveal.hm-in-view{opacity:1;transform:translateY(0)}
 }
-@media(max-width:1120px){body.aqs-home-page .hm-hero-shell{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}body.aqs-home-page .hm-name{font-size:clamp(70px,8.5vw,112px)}body.aqs-home-page .hm-hero-title{font-size:clamp(30px,3.4vw,45px)}body.aqs-home-page .hm-result-photo{min-height:320px}}
+@media(max-width:1120px){body.aqs-home-page .hm-hero-shell{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}body.aqs-home-page .hm-name{font-size:clamp(70px,8vw,106px)}body.aqs-home-page .hm-hero-title{font-size:clamp(30px,3.4vw,45px)}body.aqs-home-page .hm-result-photo{min-height:320px}}
 @media(max-width:920px){
  body.aqs-home-page .site-header .nav{gap:0}
  body.aqs-home-page .site-header .header-inner{min-height:90px}
  body.aqs-home-page .hm-hero-shell{grid-template-columns:1fr;min-height:0;gap:55px;padding-top:75px;padding-bottom:70px}
- body.aqs-home-page .hm-hero-result{max-width:730px;width:100%;margin:auto;transform:none}
+ body.aqs-home-page .hm-hero-result{max-width:730px;width:100%;margin:0 auto;transform:none}
  body.aqs-home-page .hm-name{font-size:clamp(80px,12vw,125px)}
  body.aqs-home-page .hm-hero-title{font-size:clamp(37px,5.6vw,64px)}
  body.aqs-home-page .hm-story-grid{grid-template-columns:1fr}
- body.aqs-home-page .hm-stage-column{display:none}
+ body.aqs-home-page .hm-story-step{display:flex;flex-direction:column}
  body.aqs-home-page .hm-story-step{min-height:0;padding:38px 0 50px;opacity:1}
- body.aqs-home-page .hm-mobile-shot{display:block;margin:26px 0 0}
+ body.aqs-home-page .hm-story-step .hm-mobile-shot{display:block;width:100%;margin:26px 0 0}
  body.aqs-home-page .hm-mobile-shot .hm-image-slot{min-height:300px}
  body.aqs-home-page .hm-mobile-shot figcaption{font-size:12px;color:#657081;line-height:1.6;margin-top:10px}
  body.aqs-home-page .hm-story-step>p{max-width:690px}
@@ -206,51 +204,10 @@ body.aqs-home-page .hm-endline .hm-shuriken{width:26px;height:26px;color:#ce8c3b
 }
 @media(prefers-reduced-motion:reduce){body.aqs-home-page .hm-stage-slide,body.aqs-home-page .hm-reveal,body.aqs-home-page .hm-explore-card,body.aqs-home-page .hm-cta{transition:none!important;animation:none!important}}
 
-/* HOME FIX: Show all four diagrams beside their own steps, in sequence.
-   No detached sticky panel at the top right. */
-@media (min-width: 921px) {
-  body.aqs-home-page .hm-story-grid {
-    display: block;
-  }
-  body.aqs-home-page .hm-stage-column {
-    display: none;
-  }
-  body.aqs-home-page .hm-story-steps {
-    width: 100%;
-  }
-  body.aqs-home-page .hm-story-step {
-    display: grid;
-    grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
-    column-gap: clamp(32px, 5vw, 80px);
-    align-content: center;
-    align-items: center;
-    min-height: 540px;
-    padding: 60px 0;
-  }
-  body.aqs-home-page .hm-story-step > .hm-step-index,
-  body.aqs-home-page .hm-story-step > h3,
-  body.aqs-home-page .hm-story-step > p {
-    grid-column: 1;
-  }
-  body.aqs-home-page .hm-story-step > .hm-mobile-shot {
-    display: block;
-    grid-column: 2;
-    grid-row: 1 / span 3;
-    margin: 0;
-    min-width: 0;
-    align-self: center;
-  }
-  body.aqs-home-page .hm-mobile-shot .hm-image-slot {
-    min-height: 360px;
-    aspect-ratio: 4 / 3;
-  }
-  body.aqs-home-page .hm-mobile-shot figcaption {
-    margin-top: 12px;
-    color: #657081;
-    font-size: 13px;
-    line-height: 1.6;
-  }
-  body.aqs-home-page .hm-story-step > p {
-    max-width: 460px;
-  }
+
+/* Gentle scroll reveal for each schematic, with reduced-motion fallback. */
+@media (min-width: 921px) and (prefers-reduced-motion: no-preference) {
+ body.aqs-home-page.hm-motion-ready .hm-story-step.hm-reveal:not(.hm-in-view) .hm-mobile-shot { transform:translateY(26px); opacity:0; }
+ body.aqs-home-page.hm-motion-ready .hm-story-step.hm-reveal .hm-mobile-shot { transition:opacity .7s ease,transform .7s ease; }
+ body.aqs-home-page.hm-motion-ready .hm-story-step.hm-reveal.hm-in-view .hm-mobile-shot { transform:none; opacity:1; }
 }

@@ -18,40 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  const steps = [...document.querySelectorAll('[data-story-step]')];
-  const slides = [...document.querySelectorAll('[data-story-slide]')];
-  let active = 0;
-  function activate(index) {
-    if (index === active) return;
-    active = index;
-    steps.forEach((el, i) => el.classList.toggle('is-active', i === index));
-    slides.forEach((el, i) => {
-      const selected = i === index;
-      el.classList.toggle('is-active', selected);
-      el.setAttribute('aria-hidden', String(!selected));
-    });
-  }
-  let scheduled = false;
-  function updateScrollStory() {
-    scheduled = false;
-    if (window.innerWidth <= 920 || steps.length !== 4 || slides.length !== 4) return;
-    const focusY = window.innerHeight * .51;
-    let closestIndex = 0, closestDistance = Infinity;
-    steps.forEach((step, index) => {
-      const rect = step.getBoundingClientRect();
-      const center = rect.top + rect.height / 2;
-      const distance = Math.abs(center - focusY);
-      if (distance < closestDistance) { closestIndex = index; closestDistance = distance; }
-    });
-    activate(closestIndex);
-  }
-  function requestStoryUpdate() {
-    if (!scheduled) { scheduled = true; requestAnimationFrame(updateScrollStory); }
-  }
-  window.addEventListener('scroll', requestStoryUpdate, { passive: true });
-  window.addEventListener('resize', requestStoryUpdate, { passive: true });
-  requestStoryUpdate();
-
   // Progressive enhancement: no IntersectionObserver -> content remains visible.
   if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     const revealNodes = [...document.querySelectorAll('.hm-reveal')];
