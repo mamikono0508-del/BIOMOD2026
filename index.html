@@ -1,19 +1,25 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="aQtSOME | BIOMOD 2026 — Home">
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="aQtSOME | BIOMOD 2026 — A molecular robot designed to convert mechanical stimuli into membrane deformation.">
+<meta name="theme-color" content="#182f5c">
 <title>Home | aQtSOME — BIOMOD 2026</title>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="home.css">
 <script src="script.js" defer></script>
-</head><body class="aqs-home-page">
+<script src="home.js" defer></script>
+</head>
+<body class="aqs-home-page">
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header"><div class="header-inner">
-<a class="brand aqs-logo-link" href="index.html" aria-label="aQtSOME home">
-<img src="assets/logo.png" alt="aQtSOME logo" class="aqs-brand-image" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
-<span class="aqs-logo-fallback" hidden>aQtSOME<span class="aqs-orange">.</span></span>
-<span class="aqs-brand-caption">BIOMOD 2026</span></a>
-<button class="menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Open navigation"><span></span><span></span><span></span></button>
-<nav class="nav" id="main-nav" aria-label="Main navigation"><a href="index.html" class="active" aria-current="page"><svg class="aqs-star" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 1.6 15.1 8.9 22.4 12 15.1 15.1 12 22.4 8.9 15.1 1.6 12 8.9 8.9Z" fill="currentColor"/><circle cx="12" cy="12" r="2" fill="#ffffea"/></svg>Home</a>
+ <a class="brand aqs-logo-link" href="index.html" aria-label="aQtSOME home">
+   <img src="assets/logo.png" alt="aQtSOME logo" class="aqs-brand-image" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+   <span class="aqs-logo-fallback" hidden>aQtSOME<span class="aqs-orange">.</span></span>
+   <span class="aqs-brand-caption">BIOMOD 2026</span>
+ </a>
+ <button class="menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Open navigation"><span></span><span></span><span></span></button>
+ <nav class="nav" id="main-nav" aria-label="Main navigation"><a href="index.html" class="active" aria-current="page"><svg class="aqs-star" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 1.6 15.1 8.9 22.4 12 15.1 15.1 12 22.4 8.9 15.1 1.6 12 8.9 8.9Z" fill="currentColor"/><circle cx="12" cy="12" r="2" fill="#ffffea"/></svg>Home</a>
 <a href="project.html">Project</a>
 <a href="design.html">Design</a>
 <a href="experiment.html">Experiment</a>
@@ -21,42 +27,140 @@
 <a href="elsi.html">ELSI</a>
 <a href="member.html">Member</a></nav>
 </div></header>
-<main id="main" class="aqs-home-content">
-<section class="aqs-home-hero"><div class="aqs-container aqs-hero-inner">
-<div class="aqs-home-copy"><p class="aqs-eyebrow">BIOMOD 2026 <span class="aqs-eyebrow-line"></span> KYUSHU UNIVERSITY</p>
-<h1>aQtSOME<span class="aqs-orange">.</span></h1>
-<p class="aqs-home-tagline">Engineering an amoeba-type molecular robot.</p>
-<p class="aqs-home-summary">A molecular system designed to <strong>sense mechanical tension</strong> and convert it into <strong>actin-driven membrane deformation</strong>.</p>
-<a class="aqs-primary-button" href="design.html">Explore the Design <span aria-hidden="true">↗</span></a>
-</div>
-<div class="aqs-home-concept" role="img" aria-label="Concept illustration of mechanical tension inducing MscL opening, calcium signaling and actin-mediated protrusion">
-<div class="aqs-concept-caption">THE PROPOSED RESPONSE PATHWAY</div>
-<div class="aqs-process-item"><span class="aqs-process-n">01</span><span><strong>Mechanical tension</strong><small>Input from the environment</small></span></div>
-<div class="aqs-process-line"></div>
-<div class="aqs-process-item"><span class="aqs-process-n">02</span><span><strong>MscL opening</strong><small>Ca²⁺ enters the vesicle</small></span></div>
-<div class="aqs-process-line"></div>
-<div class="aqs-process-item"><span class="aqs-process-n">03</span><span><strong>INF2 activation</strong><small>Actin polymerization is triggered</small></span></div>
-<div class="aqs-process-line"></div>
-<div class="aqs-process-item"><span class="aqs-process-n">04</span><span><strong>Membrane protrusion</strong><small>Designed mechanical output</small></span></div>
-<p class="aqs-concept-note">Design concept — not a claim of full experimental validation.</p>
-</div>
-</div></section>
-<section class="aqs-home-introduction"><div class="aqs-container aqs-intro-grid"><div><p class="aqs-kicker"><svg class="aqs-star" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 1.6 15.1 8.9 22.4 12 15.1 15.1 12 22.4 8.9 15.1 1.6 12 8.9 8.9Z" fill="currentColor"/><circle cx="12" cy="12" r="2" fill="#ffffea"/></svg> 01 / OUR IDEA</p><h2>A system that responds to its surroundings.</h2></div><div><p>Living cells continually sense and respond to mechanical changes in their environment. We aim to recreate part of that behavior using a <strong>giant unilamellar vesicle (GUV)</strong>, the mechanosensitive channel <strong>MscL</strong>, and <strong>INF2-mediated actin polymerization</strong>.</p><p>Our Wiki documents the underlying design, experimental approaches, scientific challenges, and the people who made this work possible.</p></div></div></section>
-<section class="aqs-home-explore"><div class="aqs-container"><div class="aqs-section-head"><p class="aqs-kicker"><svg class="aqs-star" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 1.6 15.1 8.9 22.4 12 15.1 15.1 12 22.4 8.9 15.1 1.6 12 8.9 8.9Z" fill="currentColor"/><circle cx="12" cy="12" r="2" fill="#ffffea"/></svg> 02 / EXPLORE</p><h2>Explore the Wiki</h2><p>Follow our project from the design concept to experimental studies and responsible research.</p></div><div class="aqs-chapter-grid"><a class="aqs-chapter" href="project.html"><span class="aqs-chapter-top"><svg class="aqs-star" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 1.6 15.1 8.9 22.4 12 15.1 15.1 12 22.4 8.9 15.1 1.6 12 8.9 8.9Z" fill="currentColor"/><circle cx="12" cy="12" r="2" fill="#ffffea"/></svg><span>01</span></span><h3>Project</h3><p>Background, Motivation & Objectives</p><span class="aqs-chapter-arrow" aria-hidden="true">↗</span></a>
-<a class="aqs-chapter" href="design.html"><span class="aqs-chapter-top"><svg class="aqs-star" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 1.6 15.1 8.9 22.4 12 15.1 15.1 12 22.4 8.9 15.1 1.6 12 8.9 8.9Z" fill="currentColor"/><circle cx="12" cy="12" r="2" fill="#ffffea"/></svg><span>02</span></span><h3>Design</h3><p>Molecular Architecture & Working Principle</p><span class="aqs-chapter-arrow" aria-hidden="true">↗</span></a>
-<a class="aqs-chapter" href="experiment.html"><span class="aqs-chapter-top"><svg class="aqs-star" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 1.6 15.1 8.9 22.4 12 15.1 15.1 12 22.4 8.9 15.1 1.6 12 8.9 8.9Z" fill="currentColor"/><circle cx="12" cy="12" r="2" fill="#ffffea"/></svg><span>03</span></span><h3>Experiment</h3><p>Experimental Methods & Evidence</p><span class="aqs-chapter-arrow" aria-hidden="true">↗</span></a>
-<a class="aqs-chapter" href="simulation.html"><span class="aqs-chapter-top"><svg class="aqs-star" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 1.6 15.1 8.9 22.4 12 15.1 15.1 12 22.4 8.9 15.1 1.6 12 8.9 8.9Z" fill="currentColor"/><circle cx="12" cy="12" r="2" fill="#ffffea"/></svg><span>04</span></span><h3>Simulation</h3><p>Computational Investigation</p><span class="aqs-chapter-arrow" aria-hidden="true">↗</span></a>
-<a class="aqs-chapter" href="elsi.html"><span class="aqs-chapter-top"><svg class="aqs-star" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 1.6 15.1 8.9 22.4 12 15.1 15.1 12 22.4 8.9 15.1 1.6 12 8.9 8.9Z" fill="currentColor"/><circle cx="12" cy="12" r="2" fill="#ffffea"/></svg><span>05</span></span><h3>ELSI</h3><p>Ethics, Safety & Society</p><span class="aqs-chapter-arrow" aria-hidden="true">↗</span></a>
-<a class="aqs-chapter" href="member.html"><span class="aqs-chapter-top"><svg class="aqs-star" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 1.6 15.1 8.9 22.4 12 15.1 15.1 12 22.4 8.9 15.1 1.6 12 8.9 8.9Z" fill="currentColor"/><circle cx="12" cy="12" r="2" fill="#ffffea"/></svg><span>06</span></span><h3>Member</h3><p>The People Behind the Project</p><span class="aqs-chapter-arrow" aria-hidden="true">↗</span></a></div></div></section>
-<section class="aqs-home-bottom"><div class="aqs-container aqs-bottom-grid"><div><p class="aqs-kicker"><svg class="aqs-star" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 1.6 15.1 8.9 22.4 12 15.1 15.1 12 22.4 8.9 15.1 1.6 12 8.9 8.9Z" fill="currentColor"/><circle cx="12" cy="12" r="2" fill="#ffffea"/></svg> COLLABORATION</p><h2>Eight members. Many helping hands.</h2></div><div><p>This interdisciplinary project has been made possible through the guidance and support of researchers and partner organizations.</p><a href="member.html">Meet our team and supporters <span aria-hidden="true">↗</span></a></div></div></section>
-</main><footer class="site-footer"><div class="footer-inner">
-<div class="footer-top"><div class="aqs-footer-identity"><a class="aqs-footer-logo" href="index.html" aria-label="aQtSOME home"><img src="assets/logo.png" alt="aQtSOME logo" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="aqs-footer-fallback" hidden>aQtSOME<span>.</span></span></a><p>BIOMOD 2026 · Research Wiki</p></div>
-<nav aria-label="Footer navigation" class="footer-nav"><a href="index.html" aria-current="page">Home</a>
+<main id="main" class="hm-main">
+ <!-- HERO: replace assets/home/result.png with your featured experimental result -->
+ <section class="hm-hero" aria-labelledby="hm-name">
+  <div class="hm-hero-orbit hm-orbit-one" aria-hidden="true"></div><div class="hm-hero-orbit hm-orbit-two" aria-hidden="true"></div>
+  <div class="hm-hero-watermark" aria-hidden="true"><svg class="hm-shuriken" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 5 63 36 95 50 63 63 50 95 37 63 5 50 37 37Z" fill="currentColor"/><circle cx="50" cy="50" r="11" fill="var(--hm-paper)"/></svg></div>
+  <div class="hm-shell hm-hero-shell">
+   <div class="hm-hero-copy">
+    <p class="hm-overline"><span class="hm-overline-rule"></span> BIOMOD 2026 · KYUSHU UNIVERSITY <span class="hm-ninja-tick">✦</span></p>
+    <h1 id="hm-name" class="hm-name">aQtSOME<span>.</span></h1>
+    <p class="hm-hero-pretitle">A MECHANORESPONSIVE MOLECULAR ROBOT</p>
+    <h2 class="hm-hero-title">From <em>Chemo</em>response<br>to <em>Mechano</em>response<span>.</span></h2>
+    <p class="hm-hero-summary">An amoeba-type molecular robot designed to turn <strong>mechanical cues</strong> from the environment into <strong>membrane deformation</strong>.</p>
+    <div class="hm-hero-actions"><a href="#how-it-works" class="hm-cta">Discover the mechanism <span aria-hidden="true">↓</span></a><a class="hm-text-link" href="project.html">Read our project <span aria-hidden="true">↗</span></a></div>
+   </div>
+   <figure class="hm-hero-result">
+    <div class="hm-result-topline"><span class="hm-glow-dot"></span><span>FEATURED RESULT</span><span>01 / RESEARCH</span></div>
+    <div class="hm-image-slot hm-result-photo" data-home-asset>
+      <div class="hm-image-fallback"><span class="hm-fallback-plus" aria-hidden="true"><svg class="hm-shuriken" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 5 63 36 95 50 63 63 50 95 37 63 5 50 37 37Z" fill="currentColor"/><circle cx="50" cy="50" r="11" fill="var(--hm-paper)"/></svg></span><span class="hm-fallback-kicker">RESULT IMAGE</span><strong>FEATURED RESULT</strong><small>Upload <code>assets/home/result.png</code></small></div>
+      <img src="assets/home/result.png" alt="Featured experimental result for aQtSOME" loading="lazy" decoding="async">
+    </div>
+    <figcaption><span class="hm-caption-label">RESULT / 2026</span> <span>Featured experimental image. Upload the selected figure and update this caption with its result description.</span></figcaption>
+   </figure>
+  </div>
+  <div class="hm-hero-foot hm-shell"><span>MECHANICAL INPUT <i></i> MOLECULAR RESPONSE</span><a href="#how-it-works">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a></div>
+ </section>
+ <!-- SCROLL STORY: 4 diagrams, placed in assets/home/overview-01.png ... overview-04.png -->
+ <section id="how-it-works" class="hm-story" aria-labelledby="hm-story-heading">
+  <div class="hm-shell">
+   <div class="hm-section-intro hm-reveal"><div class="hm-section-kicker"><svg class="aqs-star" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 1.6 15.1 8.9 22.4 12 15.1 15.1 12 22.4 8.9 15.1 1.6 12 8.9 8.9Z" fill="currentColor"/><circle cx="12" cy="12" r="2" fill="#ffffea"/></svg><span>01 / THE IDEA</span></div><h2 id="hm-story-heading">A signal from<br><em>the surroundings.</em></h2><p>Four stages of the proposed response pathway. Scroll to follow the sequence.</p></div>
+   <div class="hm-story-grid">
+    <div class="hm-story-steps"><article class="hm-story-step hm-reveal is-active" data-story-step="0" id="home-step-01">
+   <div class="hm-step-index"><span>01</span><span class="hm-step-line"></span><span>THE CUE</span></div>
+   <h3>Mechanical tension</h3><p>A narrow gap deforms the GUV. The proposed input is the change in membrane tension created by its surroundings.</p>
+   <figure class="hm-mobile-shot"><div class="hm-image-slot " data-home-asset>
+      <div class="hm-image-fallback"><span class="hm-fallback-plus" aria-hidden="true"><svg class="hm-shuriken" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 5 63 36 95 50 63 63 50 95 37 63 5 50 37 37Z" fill="currentColor"/><circle cx="50" cy="50" r="11" fill="var(--hm-paper)"/></svg></span><span class="hm-fallback-kicker">PROPOSED MECHANISM</span><strong>SCHEMATIC 01</strong><small>Upload <code>assets/home/overview-01.png</code></small></div>
+      <img src="assets/home/overview-01.png" alt="Mechanical stimulation of the GUV at a narrow gap" loading="lazy" decoding="async">
+    </div><figcaption>01 — Mechanical tension. Proposed mechanism, not a demonstration of the integrated system.</figcaption></figure>
+  </article>
+<article class="hm-story-step hm-reveal" data-story-step="1" id="home-step-02">
+   <div class="hm-step-index"><span>02</span><span class="hm-step-line"></span><span>THE SENSOR</span></div>
+   <h3>MscL opens</h3><p>The mechanosensitive channel MscL responds to tension, allowing Ca²⁺ to enter the vesicle from the external solution.</p>
+   <figure class="hm-mobile-shot"><div class="hm-image-slot " data-home-asset>
+      <div class="hm-image-fallback"><span class="hm-fallback-plus" aria-hidden="true"><svg class="hm-shuriken" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 5 63 36 95 50 63 63 50 95 37 63 5 50 37 37Z" fill="currentColor"/><circle cx="50" cy="50" r="11" fill="var(--hm-paper)"/></svg></span><span class="hm-fallback-kicker">PROPOSED MECHANISM</span><strong>SCHEMATIC 02</strong><small>Upload <code>assets/home/overview-02.png</code></small></div>
+      <img src="assets/home/overview-02.png" alt="MscL gating and calcium influx" loading="lazy" decoding="async">
+    </div><figcaption>02 — MscL opens. Proposed mechanism, not a demonstration of the integrated system.</figcaption></figure>
+  </article>
+<article class="hm-story-step hm-reveal" data-story-step="2" id="home-step-03">
+   <div class="hm-step-index"><span>03</span><span class="hm-step-line"></span><span>THE SIGNAL</span></div>
+   <h3>INF2 activation</h3><p>Incoming Ca²⁺ binds calmodulin, which is designed to activate INF2 and initiate actin polymerization near the membrane.</p>
+   <figure class="hm-mobile-shot"><div class="hm-image-slot " data-home-asset>
+      <div class="hm-image-fallback"><span class="hm-fallback-plus" aria-hidden="true"><svg class="hm-shuriken" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 5 63 36 95 50 63 63 50 95 37 63 5 50 37 37Z" fill="currentColor"/><circle cx="50" cy="50" r="11" fill="var(--hm-paper)"/></svg></span><span class="hm-fallback-kicker">PROPOSED MECHANISM</span><strong>SCHEMATIC 03</strong><small>Upload <code>assets/home/overview-03.png</code></small></div>
+      <img src="assets/home/overview-03.png" alt="Calcium calmodulin activation of INF2" loading="lazy" decoding="async">
+    </div><figcaption>03 — INF2 activation. Proposed mechanism, not a demonstration of the integrated system.</figcaption></figure>
+  </article>
+<article class="hm-story-step hm-reveal" data-story-step="3" id="home-step-04">
+   <div class="hm-step-index"><span>04</span><span class="hm-step-line"></span><span>THE OUTPUT</span></div>
+   <h3>Membrane protrusion</h3><p>Growing actin filaments are intended to generate force against the membrane and extend the leading edge into the gap.</p>
+   <figure class="hm-mobile-shot"><div class="hm-image-slot " data-home-asset>
+      <div class="hm-image-fallback"><span class="hm-fallback-plus" aria-hidden="true"><svg class="hm-shuriken" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 5 63 36 95 50 63 63 50 95 37 63 5 50 37 37Z" fill="currentColor"/><circle cx="50" cy="50" r="11" fill="var(--hm-paper)"/></svg></span><span class="hm-fallback-kicker">PROPOSED MECHANISM</span><strong>SCHEMATIC 04</strong><small>Upload <code>assets/home/overview-04.png</code></small></div>
+      <img src="assets/home/overview-04.png" alt="Actin-driven protrusion of the GUV membrane" loading="lazy" decoding="async">
+    </div><figcaption>04 — Membrane protrusion. Proposed mechanism, not a demonstration of the integrated system.</figcaption></figure>
+  </article></div>
+    <div class="hm-stage-column"><div class="hm-sticky-stage" aria-label="Four proposed mechanism diagrams displayed in sequence"><div class="hm-stage-slide is-active" data-story-slide="0" aria-hidden="false">
+  <div class="hm-stage-top"><span>SCHEMATIC / 01</span><span>01 / 04</span></div>
+  <div class="hm-image-slot hm-stage-image" data-home-asset>
+      <div class="hm-image-fallback"><span class="hm-fallback-plus" aria-hidden="true"><svg class="hm-shuriken" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 5 63 36 95 50 63 63 50 95 37 63 5 50 37 37Z" fill="currentColor"/><circle cx="50" cy="50" r="11" fill="var(--hm-paper)"/></svg></span><span class="hm-fallback-kicker">PROPOSED MECHANISM</span><strong>SCHEMATIC 01</strong><small>Upload <code>assets/home/overview-01.png</code></small></div>
+      <img src="assets/home/overview-01.png" alt="Mechanical stimulation of the GUV at a narrow gap" loading="lazy" decoding="async">
+    </div>
+  <div class="hm-stage-bottom"><strong>Mechanical tension</strong><span>MECHANICAL INPUT → MEMBRANE RESPONSE</span></div>
+ </div>
+<div class="hm-stage-slide" data-story-slide="1" aria-hidden="true">
+  <div class="hm-stage-top"><span>SCHEMATIC / 02</span><span>02 / 04</span></div>
+  <div class="hm-image-slot hm-stage-image" data-home-asset>
+      <div class="hm-image-fallback"><span class="hm-fallback-plus" aria-hidden="true"><svg class="hm-shuriken" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 5 63 36 95 50 63 63 50 95 37 63 5 50 37 37Z" fill="currentColor"/><circle cx="50" cy="50" r="11" fill="var(--hm-paper)"/></svg></span><span class="hm-fallback-kicker">PROPOSED MECHANISM</span><strong>SCHEMATIC 02</strong><small>Upload <code>assets/home/overview-02.png</code></small></div>
+      <img src="assets/home/overview-02.png" alt="MscL gating and calcium influx" loading="lazy" decoding="async">
+    </div>
+  <div class="hm-stage-bottom"><strong>MscL opens</strong><span>MECHANICAL INPUT → MEMBRANE RESPONSE</span></div>
+ </div>
+<div class="hm-stage-slide" data-story-slide="2" aria-hidden="true">
+  <div class="hm-stage-top"><span>SCHEMATIC / 03</span><span>03 / 04</span></div>
+  <div class="hm-image-slot hm-stage-image" data-home-asset>
+      <div class="hm-image-fallback"><span class="hm-fallback-plus" aria-hidden="true"><svg class="hm-shuriken" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 5 63 36 95 50 63 63 50 95 37 63 5 50 37 37Z" fill="currentColor"/><circle cx="50" cy="50" r="11" fill="var(--hm-paper)"/></svg></span><span class="hm-fallback-kicker">PROPOSED MECHANISM</span><strong>SCHEMATIC 03</strong><small>Upload <code>assets/home/overview-03.png</code></small></div>
+      <img src="assets/home/overview-03.png" alt="Calcium calmodulin activation of INF2" loading="lazy" decoding="async">
+    </div>
+  <div class="hm-stage-bottom"><strong>INF2 activation</strong><span>MECHANICAL INPUT → MEMBRANE RESPONSE</span></div>
+ </div>
+<div class="hm-stage-slide" data-story-slide="3" aria-hidden="true">
+  <div class="hm-stage-top"><span>SCHEMATIC / 04</span><span>04 / 04</span></div>
+  <div class="hm-image-slot hm-stage-image" data-home-asset>
+      <div class="hm-image-fallback"><span class="hm-fallback-plus" aria-hidden="true"><svg class="hm-shuriken" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 5 63 36 95 50 63 63 50 95 37 63 5 50 37 37Z" fill="currentColor"/><circle cx="50" cy="50" r="11" fill="var(--hm-paper)"/></svg></span><span class="hm-fallback-kicker">PROPOSED MECHANISM</span><strong>SCHEMATIC 04</strong><small>Upload <code>assets/home/overview-04.png</code></small></div>
+      <img src="assets/home/overview-04.png" alt="Actin-driven protrusion of the GUV membrane" loading="lazy" decoding="async">
+    </div>
+  <div class="hm-stage-bottom"><strong>Membrane protrusion</strong><span>MECHANICAL INPUT → MEMBRANE RESPONSE</span></div>
+ </div></div></div>
+   </div>
+   <p class="hm-story-disclaimer">The sequence above is a design concept. Experimental validation of the integrated sensor-to-actuator pathway is still required.</p>
+  </div>
+ </section>
+ <!-- ABSTRACT: user's text preserved; only selective emphasis added -->
+ <section id="abstract" class="hm-abstract" aria-labelledby="hm-abstract-heading">
+  <div class="hm-shell hm-abstract-grid"><div class="hm-abstract-side hm-reveal"><div class="hm-section-kicker"><svg class="aqs-star" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 1.6 15.1 8.9 22.4 12 15.1 15.1 12 22.4 8.9 15.1 1.6 12 8.9 8.9Z" fill="currentColor"/><circle cx="12" cy="12" r="2" fill="#ffffea"/></svg><span>02 / AT A GLANCE</span></div><h2 id="hm-abstract-heading">Abstract<span>.</span></h2><div class="hm-side-line"></div><p>THE IDEA BEHIND aQtSOME</p><svg class="hm-shuriken" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 5 63 36 95 50 63 63 50 95 37 63 5 50 37 37Z" fill="currentColor"/><circle cx="50" cy="50" r="11" fill="var(--hm-paper)"/></svg></div>
+   <div class="hm-abstract-copy hm-reveal">
+    <p>In recent years, research on amoeba-type molecular robots that autonomously deform and move has advanced, and artificial cell systems that drive membrane deformation through DNA crosslinking have been reported. However, most of these require adding DNA strands from the outside for each actuation, or artificially controlling the timing of the reaction by light irradiation, and therefore cannot be considered truly autonomous. Focusing on this dependence on external control, the present study aims to build an amoeba-type molecular robot that <strong>responds autonomously to physical stimuli from its environment</strong>, based on a protein-based molecular design.</p>
+    <p>Specifically, inspired by leukocyte extravasation—in which a white blood cell squeezes through narrow gaps in the vessel wall to migrate—we reproduce its core function, <strong>passage through a narrow gap</strong>, using a giant unilamellar vesicle (GUV). We construct a synthetic GUV in which the membrane-tension-gated channel MscL is placed on the membrane as a mechanosensor, and the calcium/calmodulin-dependent actin-polymerizing protein INF2 is encapsulated inside together with actin. When the GUV is pushed into a narrow gap, the membrane tension rises at the leading edge and MscL opens. The calcium ions that flow in then activate INF2, promoting local actin polymerization at that site.</p>
+    <p>The originality of this design lies in <strong>feeding the mechanical sensing of a narrow gap directly back into actin polymerization</strong>, without requiring any externally imposed timing control. Moreover, no previous study has demonstrated narrow-gap passage as a module for artificial cell migration; if realized, it is expected to enable a wide range of applications, such as drug delivery systems that slip through intercellular gaps.</p>
+    <a href="project.html" class="hm-abstract-link">Read the full Project <span aria-hidden="true">↗</span></a>
+   </div>
+  </div>
+ </section>
+ <!-- VIDEO LINK PLACEHOLDER: replace with a real YouTube link when available -->
+ <section id="video" class="hm-video" aria-labelledby="hm-video-heading"><div class="hm-shell hm-video-grid">
+  <div class="hm-video-copy hm-reveal"><div class="hm-section-kicker"><svg class="aqs-star" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 1.6 15.1 8.9 22.4 12 15.1 15.1 12 22.4 8.9 15.1 1.6 12 8.9 8.9Z" fill="currentColor"/><circle cx="12" cy="12" r="2" fill="#ffffea"/></svg><span>03 / PROJECT FILM</span></div><h2 id="hm-video-heading">See the idea<br><em>in motion.</em></h2><p>Our BIOMOD 2026 project video will be linked here when it is ready.</p><span class="hm-video-tag">YOUTUBE VIDEO · COMING SOON</span></div>
+  <div class="hm-video-poster hm-reveal" aria-label="YouTube video placeholder; link coming soon"><div class="hm-video-corners" aria-hidden="true"></div><div class="hm-play" aria-hidden="true">▶</div><div class="hm-video-poster-copy"><strong>PROJECT FILM</strong><span>Link to be added</span></div><span class="hm-video-watermark" aria-hidden="true"><svg class="hm-shuriken" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 5 63 36 95 50 63 63 50 95 37 63 5 50 37 37Z" fill="currentColor"/><circle cx="50" cy="50" r="11" fill="var(--hm-paper)"/></svg></span></div>
+ </div></section>
+ <!-- EXPLORE -->
+ <section id="explore" class="hm-explore" aria-labelledby="hm-explore-heading"><div class="hm-shell"><div class="hm-explore-heading hm-reveal"><div><div class="hm-section-kicker"><svg class="aqs-star" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 1.6 15.1 8.9 22.4 12 15.1 15.1 12 22.4 8.9 15.1 1.6 12 8.9 8.9Z" fill="currentColor"/><circle cx="12" cy="12" r="2" fill="#ffffea"/></svg><span>04 / KEEP EXPLORING</span></div><h2 id="hm-explore-heading">Explore the Wiki<span>.</span></h2></div><p>Move from the big idea to our molecular design, experiments, and the people behind the project.</p></div>
+  <div class="hm-explore-grid"><a class="hm-explore-card hm-reveal" href="project.html"><span class="hm-explore-meta"><svg class="aqs-star" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 1.6 15.1 8.9 22.4 12 15.1 15.1 12 22.4 8.9 15.1 1.6 12 8.9 8.9Z" fill="currentColor"/><circle cx="12" cy="12" r="2" fill="#ffffea"/></svg><span>FILE 01 / 06</span></span><h3>Project</h3><p>Motivation, background and goals</p><span class="hm-card-arrow" aria-hidden="true">↗</span></a>
+<a class="hm-explore-card hm-reveal" href="design.html"><span class="hm-explore-meta"><svg class="aqs-star" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 1.6 15.1 8.9 22.4 12 15.1 15.1 12 22.4 8.9 15.1 1.6 12 8.9 8.9Z" fill="currentColor"/><circle cx="12" cy="12" r="2" fill="#ffffea"/></svg><span>FILE 02 / 06</span></span><h3>Design</h3><p>Molecular architecture and mechanism</p><span class="hm-card-arrow" aria-hidden="true">↗</span></a>
+<a class="hm-explore-card hm-reveal" href="experiment.html"><span class="hm-explore-meta"><svg class="aqs-star" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 1.6 15.1 8.9 22.4 12 15.1 15.1 12 22.4 8.9 15.1 1.6 12 8.9 8.9Z" fill="currentColor"/><circle cx="12" cy="12" r="2" fill="#ffffea"/></svg><span>FILE 03 / 06</span></span><h3>Experiment</h3><p>Methods and experimental findings</p><span class="hm-card-arrow" aria-hidden="true">↗</span></a>
+<a class="hm-explore-card hm-reveal" href="simulation.html"><span class="hm-explore-meta"><svg class="aqs-star" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 1.6 15.1 8.9 22.4 12 15.1 15.1 12 22.4 8.9 15.1 1.6 12 8.9 8.9Z" fill="currentColor"/><circle cx="12" cy="12" r="2" fill="#ffffea"/></svg><span>FILE 04 / 06</span></span><h3>Simulation</h3><p>Computational analysis and models</p><span class="hm-card-arrow" aria-hidden="true">↗</span></a>
+<a class="hm-explore-card hm-reveal" href="elsi.html"><span class="hm-explore-meta"><svg class="aqs-star" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 1.6 15.1 8.9 22.4 12 15.1 15.1 12 22.4 8.9 15.1 1.6 12 8.9 8.9Z" fill="currentColor"/><circle cx="12" cy="12" r="2" fill="#ffffea"/></svg><span>FILE 05 / 06</span></span><h3>ELSI</h3><p>Safety, transparency and society</p><span class="hm-card-arrow" aria-hidden="true">↗</span></a>
+<a class="hm-explore-card hm-reveal" href="member.html"><span class="hm-explore-meta"><svg class="aqs-star" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 1.6 15.1 8.9 22.4 12 15.1 15.1 12 22.4 8.9 15.1 1.6 12 8.9 8.9Z" fill="currentColor"/><circle cx="12" cy="12" r="2" fill="#ffffea"/></svg><span>FILE 06 / 06</span></span><h3>Member</h3><p>The team and everyone supporting us</p><span class="hm-card-arrow" aria-hidden="true">↗</span></a></div>
+ </div></section>
+ <div class="hm-endline"><span>THE NINJA WAY OF MOLECULAR ROBOTICS</span><svg class="hm-shuriken" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 5 63 36 95 50 63 63 50 95 37 63 5 50 37 37Z" fill="currentColor"/><circle cx="50" cy="50" r="11" fill="var(--hm-paper)"/></svg><span>aQtSOME · BIOMOD 2026</span></div>
+</main>
+<footer class="site-footer"><div class="footer-inner">
+ <div class="footer-top"><div class="aqs-footer-identity"><a class="aqs-footer-logo" href="index.html" aria-label="aQtSOME home"><img src="assets/logo.png" alt="aQtSOME logo" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="aqs-footer-fallback" hidden>aQtSOME<span>.</span></span></a><p>BIOMOD 2026 · Research Wiki</p></div>
+ <nav class="footer-nav" aria-label="Footer navigation"><a href="index.html" aria-current="page">Home</a>
 <a href="project.html">Project</a>
 <a href="design.html">Design</a>
 <a href="experiment.html">Experiment</a>
 <a href="simulation.html">Simulation</a>
 <a href="elsi.html">ELSI</a>
 <a href="member.html">Member</a></nav></div>
-<div class="footer-bottom"><span>© 2026 aQtSOME</span><span>Kyushu University · BIOMOD 2026</span></div>
-</div></footer></body></html>
+ <div class="footer-bottom"><span>© 2026 aQtSOME</span><span>Kyushu University · BIOMOD 2026</span></div>
+</div></footer>
+</body></html>
