@@ -211,3 +211,99 @@ body.aqs-home-page .hm-endline .hm-shuriken{width:26px;height:26px;color:#ce8c3b
  body.aqs-home-page.hm-motion-ready .hm-story-step.hm-reveal .hm-mobile-shot { transition:opacity .7s ease,transform .7s ease; }
  body.aqs-home-page.hm-motion-ready .hm-story-step.hm-reveal.hm-in-view .hm-mobile-shot { transform:none; opacity:1; }
 }
+
+
+/* ========== HOME 2026 / editorial layout refinement ========== */
+/* Respect the real column widths: avoid title extending under Result card. */
+@media (min-width:921px) {
+ body.aqs-home-page .hm-hero-shell{
+   grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);
+   column-gap:clamp(78px,7vw,122px);
+ }
+ body.aqs-home-page .hm-hero-copy{min-width:0}
+ body.aqs-home-page .hm-name{
+   font-size:clamp(72px,7.1vw,116px);
+   letter-spacing:-.072em;
+   white-space:nowrap;
+ }
+ body.aqs-home-page .hm-hero-result{margin-left:0}
+}
+@media (min-width:921px) and (max-width:1120px){
+ body.aqs-home-page .hm-hero-shell{column-gap:64px;grid-template-columns:minmax(0,1fr) minmax(0,.92fr)}
+ body.aqs-home-page .hm-name{font-size:clamp(62px,7vw,86px)}
+}
+
+/* Four visual-first chapters: alternating gallery, not a sticky single-frame panel. */
+body.aqs-home-page .hm-story-grid,
+body.aqs-home-page .hm-story-steps{display:block;min-width:0;width:100%}
+body.aqs-home-page .hm-visual-card{
+ display:grid;
+ grid-template-columns:minmax(130px,.25fr) minmax(0,1fr);
+ gap:clamp(30px,5vw,78px);
+ align-items:center;
+ padding:clamp(42px,6vw,83px) 0;
+ border-top:1px solid var(--hm-line);
+ min-height:480px;
+}
+body.aqs-home-page .hm-visual-card:last-child{border-bottom:1px solid var(--hm-line)}
+body.aqs-home-page .hm-visual-card:nth-child(even){grid-template-columns:minmax(0,1fr) minmax(130px,.25fr)}
+body.aqs-home-page .hm-visual-card:nth-child(even) .hm-visual-figure{grid-column:1;grid-row:1}
+body.aqs-home-page .hm-visual-card:nth-child(even) .hm-visual-index-col{grid-column:2;grid-row:1;align-items:flex-end;text-align:right}
+body.aqs-home-page .hm-visual-index-col{display:flex;flex-direction:column;align-items:flex-start;gap:18px;min-width:0}
+body.aqs-home-page .hm-visual-count{font:800 clamp(72px,9vw,130px)/.9 Arial,Helvetica,sans-serif;letter-spacing:-.085em;color:var(--hm-orange);white-space:nowrap}
+body.aqs-home-page .hm-visual-count span{font:800 13px Arial,sans-serif;color:var(--hm-navy);letter-spacing:.09em;margin-left:8px}
+body.aqs-home-page .hm-visual-rule{width:66px;height:2px;background:var(--hm-orange)}
+body.aqs-home-page .hm-visual-star{width:55px;height:55px;color:rgba(24,47,92,.15);transform:rotate(18deg)}
+body.aqs-home-page .hm-visual-note{font:800 10px/1.7 Arial,sans-serif;letter-spacing:.2em;color:#677285}
+body.aqs-home-page .hm-visual-figure{margin:0;min-width:0;background:#ffffea;border:1px solid rgba(24,47,92,.19);padding:clamp(12px,1.8vw,24px);box-shadow:15px 15px 0 rgba(24,47,92,.065);position:relative}
+body.aqs-home-page .hm-visual-figure:after{content:'';width:22px;height:22px;position:absolute;right:-2px;bottom:-2px;border-right:3px solid var(--hm-orange);border-bottom:3px solid var(--hm-orange);pointer-events:none}
+body.aqs-home-page .hm-visual-banner{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:16px;font:800 10px Arial,sans-serif;letter-spacing:.17em;color:var(--hm-navy)}
+body.aqs-home-page .hm-visual-banner span:first-child:before{content:'✦';color:var(--hm-orange);margin-right:9px;font-size:15px}
+body.aqs-home-page .hm-visual-slot{aspect-ratio:auto;min-height:300px;background:#fff;display:block}
+body.aqs-home-page .hm-visual-slot>img{position:relative;inset:auto;width:100%;height:auto;max-height:550px;object-fit:contain;background:#fff}
+body.aqs-home-page .hm-visual-slot .hm-image-fallback{min-height:300px}
+body.aqs-home-page .hm-visual-figure figcaption{display:flex;justify-content:space-between;gap:14px;margin-top:14px;font:700 11px/1.6 Arial,sans-serif;letter-spacing:.055em;color:#606d7e}
+body.aqs-home-page .hm-visual-figure figcaption span:first-child{color:var(--hm-navy);white-space:nowrap}
+body.aqs-home-page.hm-motion-ready .hm-visual-card.hm-reveal .hm-visual-figure{transition:opacity .72s ease,transform .72s ease}
+@media (prefers-reduced-motion:no-preference){
+ body.aqs-home-page.hm-motion-ready .hm-visual-card.hm-reveal:not(.hm-in-view) .hm-visual-figure{opacity:0;transform:translateY(40px)}
+ body.aqs-home-page.hm-motion-ready .hm-visual-card.hm-reveal.hm-in-view .hm-visual-figure{opacity:1;transform:none}
+}
+@media(max-width:920px){
+ body.aqs-home-page .hm-visual-card,body.aqs-home-page .hm-visual-card:nth-child(even){display:flex;flex-direction:column;align-items:stretch;gap:22px;min-height:0;padding:42px 0}
+ body.aqs-home-page .hm-visual-card:nth-child(even) .hm-visual-index-col{align-items:flex-start;text-align:left}
+ body.aqs-home-page .hm-visual-index-col{display:flex;flex-direction:row;align-items:center;gap:18px}
+ body.aqs-home-page .hm-visual-count{font-size:62px}
+ body.aqs-home-page .hm-visual-rule{width:28px}
+ body.aqs-home-page .hm-visual-star{width:28px;height:28px}
+ body.aqs-home-page .hm-visual-figure{width:100%}
+ body.aqs-home-page .hm-visual-note{margin-left:auto;text-align:right}
+ body.aqs-home-page .hm-visual-slot{min-height:230px}
+ body.aqs-home-page .hm-visual-slot .hm-image-fallback{min-height:220px}
+ body.aqs-home-page .hm-visual-figure figcaption{flex-wrap:wrap}
+}
+@media(max-width:600px){
+ body.aqs-home-page .hm-visual-count{font-size:49px}
+ body.aqs-home-page .hm-visual-star{display:none}
+ body.aqs-home-page .hm-visual-figure{padding:10px;box-shadow:8px 8px 0 rgba(24,47,92,.065)}
+ body.aqs-home-page .hm-visual-banner{font-size:9px}
+ body.aqs-home-page .hm-visual-figure figcaption{font-size:10px}
+ body.aqs-home-page .hm-visual-slot{min-height:185px}
+}
+
+/* ABSTRACT: heading first, full-width reading column immediately below. */
+body.aqs-home-page .hm-abstract-grid{
+ display:grid; grid-template-columns:minmax(0,1fr);
+ row-gap:clamp(22px,3.4vw,46px); column-gap:0;
+}
+body.aqs-home-page .hm-abstract-side{position:relative;min-width:0}
+body.aqs-home-page .hm-abstract-side h2{margin:12px 0 0}
+body.aqs-home-page .hm-abstract-copy{padding-top:clamp(22px,3vw,38px);border-top:2px solid rgba(24,47,92,.19);max-width:1090px}
+body.aqs-home-page .hm-abstract-copy p{max-width:100%;font-size:18px;line-height:1.9}
+@media(max-width:600px){
+ body.aqs-home-page .hm-abstract-grid{row-gap:16px}
+ body.aqs-home-page .hm-abstract-copy p{font-size:16px;line-height:1.9}
+}
+/* Once an image loads, remove the placeholder from layout rather than only
+   making it invisible: prevents a blank 300px block above the actual figure. */
+body.aqs-home-page .hm-visual-slot.is-loaded > .hm-image-fallback { display:none; }
