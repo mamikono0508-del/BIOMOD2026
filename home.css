@@ -205,3 +205,52 @@ body.aqs-home-page .hm-endline .hm-shuriken{width:26px;height:26px;color:#ce8c3b
  body.aqs-home-page .hm-endline .hm-shuriken{width:18px;height:18px}
 }
 @media(prefers-reduced-motion:reduce){body.aqs-home-page .hm-stage-slide,body.aqs-home-page .hm-reveal,body.aqs-home-page .hm-explore-card,body.aqs-home-page .hm-cta{transition:none!important;animation:none!important}}
+
+/* HOME FIX: Show all four diagrams beside their own steps, in sequence.
+   No detached sticky panel at the top right. */
+@media (min-width: 921px) {
+  body.aqs-home-page .hm-story-grid {
+    display: block;
+  }
+  body.aqs-home-page .hm-stage-column {
+    display: none;
+  }
+  body.aqs-home-page .hm-story-steps {
+    width: 100%;
+  }
+  body.aqs-home-page .hm-story-step {
+    display: grid;
+    grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
+    column-gap: clamp(32px, 5vw, 80px);
+    align-content: center;
+    align-items: center;
+    min-height: 540px;
+    padding: 60px 0;
+  }
+  body.aqs-home-page .hm-story-step > .hm-step-index,
+  body.aqs-home-page .hm-story-step > h3,
+  body.aqs-home-page .hm-story-step > p {
+    grid-column: 1;
+  }
+  body.aqs-home-page .hm-story-step > .hm-mobile-shot {
+    display: block;
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    margin: 0;
+    min-width: 0;
+    align-self: center;
+  }
+  body.aqs-home-page .hm-mobile-shot .hm-image-slot {
+    min-height: 360px;
+    aspect-ratio: 4 / 3;
+  }
+  body.aqs-home-page .hm-mobile-shot figcaption {
+    margin-top: 12px;
+    color: #657081;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+  body.aqs-home-page .hm-story-step > p {
+    max-width: 460px;
+  }
+}
