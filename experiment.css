@@ -143,3 +143,31 @@ body.aqs-experiment-page .site-footer .footer-bottom{font-size:13px}
 
 /* Keep missing-file placeholders hidden after a successful image load. */
 .exp-placeholder[hidden]{display:none!important}
+
+/* Experiment: semantic bullet and numbered procedural lists */
+.exp-page .exp-details,
+.exp-page .exp-procedure {
+  max-width: 920px;
+  margin: 0 0 24px;
+  padding-left: clamp(24px, 3.5vw, 38px);
+  line-height: 1.86;
+}
+.exp-page .exp-details li,
+.exp-page .exp-procedure li {
+  padding-left: 7px;
+  margin-bottom: 12px;
+}
+.exp-page .exp-details li::marker,
+.exp-page .exp-procedure li::marker {
+  color: var(--exp-navy);
+  font-weight: 800;
+}
+.exp-page .exp-details li:last-child,
+.exp-page .exp-procedure li:last-child { margin-bottom: 0; }
+.exp-page .exp-section-heading--simple { align-items: center; gap: 13px; margin-bottom: 24px; }
+.exp-page .exp-section-heading--simple .exp-shuriken { margin-top: 0; }
+.exp-page .exp-section-heading--simple h2 { margin: 0; }
+@media (max-width:700px) {
+ .exp-page .exp-details,.exp-page .exp-procedure { padding-left: 25px; }
+ .exp-page .exp-details li,.exp-page .exp-procedure li { padding-left: 4px; }
+}
