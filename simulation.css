@@ -30,7 +30,7 @@
 .sim-page .sim-data strong small{font-size:17px;font-family:Arial,sans-serif;white-space:nowrap}
 .sim-page .sim-data>div>span:last-child{font-size:13px;line-height:1.65;color:#4b5567}
 .sim-page .sim-link-block{max-width:890px;border-left:4px solid var(--sim-orange);background:rgba(24,47,92,.055);padding:21px 25px;display:flex;justify-content:space-between;align-items:center;gap:16px}
-.sim-page .sim-link-block>div>span{font-size:10px;letter-spacing:.17em;font-weight:800;color:var(--sim-navy)}
+.sim-page .sim-link-block>div>span{font-size:15px;letter-spacing:.08em;font-weight:800;color:var(--sim-navy)}
 .sim-page .sim-link-block p{font-size:16px;margin:4px 0 0;line-height:1.5}
 .sim-page .sim-coming{font-size:13px;font-weight:700;color:#606979;white-space:nowrap;border:1px dashed rgba(24,47,92,.35);padding:10px 15px}
 /* Keep shared navigation consistent with Project; do not modify other pages. */
@@ -48,5 +48,5 @@ body.aqs-simulation-page .site-footer .footer-bottom{font-size:13px}
 @media(max-width:700px){.sim-page{font-size:17px}.sim-page .sim-shell{padding:0 20px}.sim-page .sim-hero{padding:55px 0 48px}.sim-page .sim-section{padding:50px 0}.sim-page .sim-heading{gap:10px}.sim-page .sim-number{font-size:20px}.sim-page .sim-mark{font-size:19px}.sim-page .sim-data-three{grid-template-columns:1fr}.sim-page .sim-link-block{align-items:flex-start;flex-direction:column}.sim-page .sim-coming{white-space:normal}body.aqs-simulation-page .site-header .aqs-brand-image{width:185px!important;height:70px!important}body.aqs-simulation-page .site-footer .aqs-footer-logo img{width:185px!important;height:70px!important}}
 @media(max-width:480px){.sim-page .sim-data{grid-template-columns:1fr}.sim-page .sim-heading h2{font-size:25px}}
 
-.sim-page .sim-mscl-link{color:#182f5c;text-decoration:none;background:#fff7e4;border:1px solid #ff9b2e;white-space:nowrap}.sim-page .sim-mscl-link:hover{background:#ff9b2e;color:#182f5c}
-@media(max-width:700px){.sim-page .sim-mscl-link{white-space:normal}}
+.sim-page .sim-mscl-link,.sim-page .sim-detail-link{color:#182f5c;text-decoration:none;background:#fff7e4;border:1px solid #ff9b2e;white-space:nowrap}.sim-page .sim-mscl-link:hover,.sim-page .sim-detail-link:hover{background:#ff9b2e;color:#182f5c}
+@media(max-width:700px){.sim-page .sim-mscl-link,.sim-page .sim-detail-link{white-space:normal}}
