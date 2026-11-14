@@ -1,23 +1,70 @@
-<!DOCTYPE html>
-
-<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="aQtSOME BIOMOD 2026 Wiki — Simulation" name="description"/><title>Simulation | aQtSOME · BIOMOD 2026</title><link href="style.css" rel="stylesheet"/><script defer="" src="script.js"></script><link href="aqs-unify.css" rel="stylesheet"/></head>
-<body class="aqs-standard-page"><a class="skip-link" href="#main">Skip to content</a>
-<header class="site-header">
-<div class="header-inner">
-<a aria-label="aQtSOME トップページ" class="brand aqe-brand" href="index.html">
-<img alt="aQtSOME ロゴ" class="aqe-brand-logo" onerror="this.hidden=true;this.nextElementSibling.hidden=false" src="assets/logo.png"/>
-<span class="aqe-brand-fallback" hidden="">aQtSOME<span class="aqe-brand-accent">.</span></span>
-<span class="aqe-brand-sub">BIOMOD 2026</span>
-</a>
-<button aria-controls="main-nav" aria-expanded="false" aria-label="メニューを開く" class="menu-toggle" type="button"><span></span><span></span><span></span></button>
-<nav aria-label="Main navigation" class="nav" id="main-nav">
-<a href="index.html">Home</a><a href="project.html">Project</a><a href="design.html">Design</a><a href="experiment.html">Experiment</a><a aria-current="page" class="active" href="simulation.html"><svg aria-hidden="true" class="shuriken" height="16" viewbox="0 0 24 24" width="16"><path d="M12 1.5 15.5 8.5 22.5 12 15.5 15.5 12 22.5 8.5 15.5 1.5 12 8.5 8.5Z" fill="currentColor"></path><circle cx="12" cy="12" fill="var(--paper,#ffffea)" r="2"></circle></svg>Simulation</a>
-<a href="elsi.html"> ELSI</a><a href="member.html">Member</a>
-</nav>
-</div>
-</header>
-<main id="main"><section class="page-hero"><div class="eyebrow">BIOMOD 2026 / SIMULATION</div><div class="section-label"><svg aria-hidden="true" class="shuriken" height="17" viewbox="0 0 24 24" width="17"><path d="M12 1.5 15.5 8.5 22.5 12 15.5 15.5 12 22.5 8.5 15.5 1.5 12 8.5 8.5Z" fill="currentColor"></path><circle cx="12" cy="12" fill="var(--paper)" r="2"></circle></svg> <span>SECTION 04</span></div><h1>Simulation<span class="period">.</span></h1><p class="hero-lead">In silico Investigation</p></section><section class="section-wrap reading"><h2>Overview</h2><p>Present simulations, assumptions, numerical analysis, and validation.</p><div class="note"><strong>Draft area</strong><p>Replace this text with the team's original research content, figures, and references.</p></div><h2>Details</h2><p>Use clear subheadings, numbered figures, and citations as you develop this section.</p></section></main>
-<footer class="site-footer"><div class="footer-inner"><div class="footer-top">
-<div class="aqe-footer-identity"><a aria-label="aQtSOME トップページ" class="aqe-footer-logo" href="index.html"><img alt="aQtSOME ロゴ" onerror="this.hidden=true;this.nextElementSibling.hidden=false" src="assets/logo.png"/><span class="aqe-footer-fallback" hidden="">aQtSOME<span>.</span></span></a><p>BIOMOD 2026 · Research Wiki</p></div>
-<nav aria-label="Footer navigation" class="footer-nav"><a href="index.html">Home</a><a href="project.html">Project</a><a href="design.html">Design</a><a href="experiment.html">Experiment</a><a aria-current="page" href="simulation.html">Simulation</a><a href="elsi.html">ELSI</a><a href="member.html">Member</a></nav>
-</div><div class="footer-bottom"><span>© 2026 aQtSOME</span><span>Kyushu University · BIOMOD 2026</span></div></div></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="aQtSOME BIOMOD 2026 — calcium diffusion and MscL gating simulations.">
+  <title>Simulation | aQtSOME — BIOMOD 2026</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="simulation.css?v=1">
+  <script src="script.js" defer></script>
+</head>
+<body class="aqs-simulation-page">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="header-inner">
+<a aria-label="aQtSOME home" class="brand aqs-logo-link" href="index.html">
+<img alt="aQtSOME logo" class="aqs-brand-image" onerror="this.hidden=true;this.nextElementSibling.hidden=false" src="assets/logo.png"/>
+<span class="aqs-logo-fallback" hidden="">aQtSOME<span class="aqs-orange">.</span></span>
+<span class="aqs-brand-caption">BIOMOD 2026</span></a>
+<button aria-controls="main-nav" aria-expanded="false" aria-label="Open navigation" class="menu-toggle" type="button"><span></span><span></span><span></span></button>
+<nav aria-label="Main navigation" class="nav" id="main-nav"><a href="index.html">Home</a>
+<a href="project.html">Project</a>
+<a href="design.html">Design</a>
+<a href="experiment.html">Experiment</a>
+<a aria-current="page" class="active" href="simulation.html"><svg aria-hidden="true" class="aqs-star" height="16" viewbox="0 0 24 24" width="16"><path d="M12 1.6 15.1 8.9 22.4 12 15.1 15.1 12 22.4 8.9 15.1 1.6 12 8.9 8.9Z" fill="currentColor"></path><circle cx="12" cy="12" fill="#ffffea" r="2"></circle></svg>Simulation</a>
+<a href="elsi.html">ELSI</a>
+<a href="member.html">Member</a></nav>
+</div></header>
+<main id="main" class="sim-page">
+  <section class="sim-hero">
+    <div class="sim-shell">
+      <p class="sim-overline">BIOMOD 2026 / aQtSOME / COMPUTATIONAL STUDY</p>
+      <h1>Simulation<span class="sim-dot">.</span></h1>
+      <p class="sim-lead">Testing molecular behavior through physical models.</p>
+      <p class="sim-intro">Two complementary simulations examine the key requirements of our proposed mechanoresponsive system: the local spread of calcium ions and the membrane tension needed to activate MscL.</p>
+    </div>
+  </section>
+  <nav class="sim-toc" aria-label="On this page">
+    <div class="sim-shell sim-toc-inner"><span>ON THIS PAGE</span><a href="#sim-ca">01 Ca²⁺ Diffusion</a><a href="#sim-mscl">02 MscL Gating</a></div>
+  </nav>
+  <div class="sim-shell sim-content">
+    <section class="sim-section" id="sim-ca" aria-labelledby="sim-ca-title">
+      <div class="sim-heading"><span class="sim-mark" aria-hidden="true">✦</span><span class="sim-number">01</span><div><p>REACTION–DIFFUSION MODEL</p><h2 id="sim-ca-title">Ca²⁺ Diffusion Simulation</h2></div></div>
+      <div class="sim-body">
+        <p>We used a reaction–diffusion model to calculate how far Ca²⁺ entering through MscL spreads inside a GUV, comparing free diffusion with systems containing EGTA or BAPTA. Under free diffusion, the region where Ca²⁺ reached the level needed to trigger actin polymerization was <strong>limited to within a few micrometers of the channel</strong>. Adding a chelator narrowed this region to <strong>the immediate vicinity of the channel (about 10 nm)</strong> and kept it stable over time.</p>
+        <div class="sim-data" aria-label="Calcium diffusion findings"><div><span class="sim-data-tag">FREE DIFFUSION</span><strong>Few µm</strong><span>Activation region near MscL</span></div><div><span class="sim-data-tag">WITH EGTA OR BAPTA</span><strong>~10 nm</strong><span>Restricted, stable region</span></div></div>
+        <div class="sim-link-block"><div><span>EXPLORE THE MODEL</span><p>Detailed simulation results and methods</p></div><span class="sim-coming" aria-label="Detailed simulation link coming soon">Link coming soon <span aria-hidden="true">↗</span></span></div>
+      </div>
+    </section>
+    <section class="sim-section" id="sim-mscl" aria-labelledby="sim-mscl-title">
+      <div class="sim-heading"><span class="sim-mark" aria-hidden="true">✦</span><span class="sim-number">02</span><div><p>MECHANICAL GATING MODEL</p><h2 id="sim-mscl-title">MscL Gating Simulation</h2></div></div>
+      <div class="sim-body">
+        <p>We built a physical model of a GUV squeezed by the tissue around a tumor. The model links tissue stress, GUV deformation and membrane tension, and tests whether the mechanosensitive channel MscL opens before the membrane ruptures. For a 5 µm GUV with 1,000 MscL Q56P channels, the channels opened at a membrane tension of <strong>3.1 pN/nm</strong>, below the <strong>5 pN/nm</strong> that the membrane can withstand for hours. There was a range of tissue stress in which the channels open without rupture. The stress at the tumor boundary was <strong>9–22 times higher</strong> than the stress needed for opening. This held for GUV diameters of 1–20 µm and for about 60 or more channels per GUV.</p>
+        <div class="sim-data sim-data-three" aria-label="MscL gating findings"><div><span class="sim-data-tag">OPENING TENSION</span><strong>3.1 <small>pN/nm</small></strong><span>Modeled MscL Q56P gating</span></div><div><span class="sim-data-tag">MEMBRANE LIMIT</span><strong>5 <small>pN/nm</small></strong><span>Hours-long endurance threshold</span></div><div><span class="sim-data-tag">TUMOR BOUNDARY</span><strong>9–22×</strong><span>Stress relative to gating threshold</span></div></div>
+        <div class="sim-link-block"><div><span>EXPLORE THE MODEL</span><p>Detailed simulation results and methods</p></div><span class="sim-coming" aria-label="Detailed simulation link coming soon">Link coming soon <span aria-hidden="true">↗</span></span></div>
+      </div>
+    </section>
+  </div>
+</main>
+<footer class="site-footer"><div class="footer-inner">
+<div class="footer-top"><div class="aqs-footer-identity"><a aria-label="aQtSOME home" class="aqs-footer-logo" href="index.html"><img alt="aQtSOME logo" onerror="this.hidden=true;this.nextElementSibling.hidden=false" src="assets/logo.png"/><span class="aqs-footer-fallback" hidden="">aQtSOME<span>.</span></span></a><p>BIOMOD 2026 · Research Wiki</p></div>
+<nav aria-label="Footer navigation" class="footer-nav"><a href="index.html">Home</a>
+<a href="project.html">Project</a>
+<a href="design.html">Design</a>
+<a href="experiment.html">Experiment</a>
+<a aria-current="page" href="simulation.html">Simulation</a>
+<a href="elsi.html">ELSI</a>
+<a href="member.html">Member</a></nav></div>
+<div class="footer-bottom"><span>© 2026 aQtSOME</span><span>Kyushu University · BIOMOD 2026</span></div>
+</div></footer>
+</body></html>
