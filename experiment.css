@@ -1,0 +1,134 @@
+/* aQtSOME Experiment page - scoped to avoid changes to other wiki pages */
+.exp-page{--exp-navy:#182f5c;--exp-orange:#ff9b2e;--exp-paper:#ffffea;--exp-muted:#4b5567;--exp-rule:rgba(24,47,92,.18);font:18px/1.9 Arial,"Helvetica Neue",sans-serif;background:var(--exp-paper);color:#1a202c}
+.exp-page *{box-sizing:border-box}
+.exp-shell{width:100%;max-width:1070px;margin:0 auto;padding:0 32px}
+.exp-hero{padding:79px 0 69px;border-bottom:1px solid var(--exp-rule);background:radial-gradient(circle at 85% 18%,rgba(255,155,46,.08),transparent 35%)}
+.exp-overline{font-size:12px;letter-spacing:.18em;font-weight:800;color:var(--exp-navy);margin:0}
+.exp-hero h1{color:var(--exp-navy);font:700 clamp(57px,8.8vw,100px)/1.1 Georgia,serif;letter-spacing:-.056em;margin:16px 0 24px}
+.exp-dot{color:var(--exp-orange)}
+.exp-lead{font-size:clamp(21px,2.8vw,29px);font-weight:700;line-height:1.38;max-width:840px;margin:0 0 18px}
+.exp-summary{max-width:900px;color:var(--exp-muted);margin:0}
+.exp-status{display:inline-block;padding:7px 13px;margin:25px 0 0;border:1px solid var(--exp-rule);font:800 11px/1.65 Arial,sans-serif;letter-spacing:.1em;color:var(--exp-navy)}
+.exp-status span{color:var(--exp-orange);padding:0 7px}
+.exp-toc{border-bottom:1px solid var(--exp-rule)}
+.exp-toc-inner{display:flex;flex-wrap:wrap;align-items:center;gap:11px 23px;padding-top:17px;padding-bottom:17px}
+.exp-toc-inner>span{font-size:11px;font-weight:800;letter-spacing:.16em;color:var(--exp-muted)}
+.exp-toc a{font-size:13px;font-weight:700;color:var(--exp-navy);text-decoration:none}
+.exp-toc a:hover{color:var(--exp-orange);text-decoration:underline;text-underline-offset:5px}
+.exp-section{padding:65px 0;border-bottom:1px solid var(--exp-rule);scroll-margin-top:130px}
+.exp-section:last-child{border:0}
+.exp-section-heading{display:flex;align-items:flex-start;gap:15px;margin-bottom:33px}
+.exp-shuriken{font-size:24px;color:var(--exp-orange);line-height:1.15;flex:none;margin-top:4px}
+.exp-number{font:700 27px/1.22 Georgia,serif;color:var(--exp-navy)}
+.exp-section-label{display:block;letter-spacing:.18em;font-size:11px;font-weight:800;color:var(--exp-muted)}
+.exp-section-heading h2{font:700 clamp(26px,3vw,36px)/1.3 Georgia,serif;color:var(--exp-navy);letter-spacing:-.018em;margin:5px 0 0}
+.exp-section-body{max-width:920px;padding-left:0}
+.exp-section-body>p,.exp-conclusion>p{margin:0 0 22px;max-width:920px}
+.exp-section-body strong{color:var(--exp-navy)}
+.exp-subheading{color:var(--exp-navy);font:700 clamp(22px,2.6vw,28px)/1.35 Georgia,serif;margin:48px 0 19px;scroll-margin-top:135px}
+.exp-subheading:first-child{margin-top:0}
+.exp-minor{font:700 17px/1.55 Arial,sans-serif;color:var(--exp-navy);border-left:3px solid var(--exp-orange);padding-left:14px;margin:30px 0 14px;letter-spacing:0}
+.exp-section-body a{color:var(--exp-navy);text-decoration:underline;text-decoration-color:var(--exp-orange);text-underline-offset:3px;overflow-wrap:anywhere}
+.exp-figure{max-width:880px;margin:35px auto 43px}
+.exp-figure-media{background:#fffef6;border:1px solid var(--exp-rule);padding:12px;display:flex;justify-content:center;align-items:center;min-height:235px}
+.exp-figure-media img{display:block;max-width:100%;width:auto;height:auto;max-height:690px;object-fit:contain}
+.exp-page [hidden]{display:none!important}
+.exp-placeholder{min-height:216px;width:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:7px;text-align:center;padding:18px;border:1px dashed rgba(24,47,92,.3);color:var(--exp-navy)}
+.exp-placeholder-symbol{font-size:31px;color:var(--exp-orange)}
+.exp-placeholder strong{font-size:14px;letter-spacing:.17em}
+.exp-placeholder span:last-child{font:13px/1.6 monospace;color:var(--exp-muted);overflow-wrap:anywhere}
+.exp-figure figcaption{font:14px/1.75 Arial,sans-serif;color:var(--exp-muted);margin-top:12px}
+.exp-figure figcaption strong{color:var(--exp-navy);font-weight:800}
+.exp-table-block{max-width:880px;margin:30px auto 39px}
+.exp-table-title{font-size:15px;line-height:1.6;margin:0 0 10px;color:var(--exp-navy)}
+.exp-table-empty{display:flex;align-items:center;gap:16px;background:#fffef6;border:1px solid var(--exp-rule);border-top:4px solid var(--exp-navy);padding:22px 25px;min-height:102px}
+.exp-table-empty>span{font-size:23px;color:var(--exp-orange);flex:none}
+.exp-table-empty strong{font-size:15px;display:block;color:var(--exp-muted);font-weight:600}
+.exp-table-empty small{font-size:12px;display:block;color:#777;margin-top:4px}
+.exp-table-note{font-size:14px;line-height:1.7;color:var(--exp-muted);margin:9px 0 0}
+.exp-conclusion{background:rgba(24,47,92,.045);border-left:4px solid var(--exp-orange);padding:26px 29px 10px;margin:43px 0 15px}
+.exp-conclusion-tag{color:var(--exp-navy);letter-spacing:.16em;font:bold 11px/1.5 Arial,sans-serif;margin-bottom:13px}
+.exp-conclusion p{font-size:16px;line-height:1.85}
+.exp-reference{font-size:15px;line-height:1.75;overflow-wrap:anywhere;padding-left:19px;position:relative}
+.exp-reference::before{content:'✦';color:var(--exp-orange);position:absolute;left:0;font-size:10px;top:5px}
+/* Shared header/footer dimensions match Project without editing style.css */
+body.aqs-experiment-page .site-header .aqs-logo-link{max-width:none;min-width:0;display:flex;flex-direction:column;justify-content:center;min-height:85px}
+body.aqs-experiment-page .site-header .aqs-brand-image{width:235px!important;height:86px!important;max-width:none!important;max-height:none!important;object-fit:contain;object-position:left center}
+body.aqs-experiment-page .site-header .aqs-brand-caption{font-size:11px;font-weight:700;letter-spacing:.19em;color:#182f5c;margin-top:2px}
+body.aqs-experiment-page .site-header .header-inner{min-height:110px}
+body.aqs-experiment-page .site-header .nav a{font-size:15px}
+body.aqs-experiment-page .site-header .nav svg{width:16px!important;height:16px!important;max-width:16px!important;max-height:16px!important;display:inline-block;vertical-align:middle;flex:0 0 16px}
+body.aqs-experiment-page .site-footer .footer-nav a{font-size:15px}
+body.aqs-experiment-page .site-footer .aqs-footer-logo img{width:235px!important;height:86px!important;max-width:none!important;max-height:none!important;object-fit:contain;object-position:left center}
+body.aqs-experiment-page .site-footer .aqs-footer-identity p{font-size:14px}
+body.aqs-experiment-page .site-footer .footer-bottom{font-size:13px}
+@media(max-width:920px){body.aqs-experiment-page .site-header .header-inner{min-height:95px}}
+@media(max-width:700px){.exp-page{font-size:16px}.exp-shell{padding:0 20px}.exp-hero{padding:54px 0 46px}.exp-hero h1{font-size:clamp(47px,12vw,74px)}.exp-section{padding:49px 0}.exp-section-heading{gap:10px}.exp-number{font-size:22px}.exp-shuriken{font-size:19px}.exp-subheading{margin-top:36px}.exp-figure-media{min-height:185px;padding:7px}.exp-placeholder{min-height:165px}.exp-figure figcaption{font-size:13px}.exp-conclusion{padding:19px 17px 5px}.exp-conclusion p{font-size:15px}.exp-table-empty{padding:15px 14px}body.aqs-experiment-page .site-header .aqs-brand-image{width:185px!important;height:70px!important}body.aqs-experiment-page .site-footer .aqs-footer-logo img{width:185px!important;height:70px!important}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+
+/* Consistent editable HTML tables for all 17 experimental compositions. */
+.exp-page .exp-table-scroll {
+  max-width:100%;
+  overflow-x:auto;
+  background:#fffef6;
+  border:1px solid var(--exp-rule);
+  border-radius:6px;
+  scrollbar-color:rgba(24,47,92,.35) transparent;
+  -webkit-overflow-scrolling:touch;
+}
+.exp-page .exp-table-scroll:focus-visible{outline:2px solid var(--exp-orange);outline-offset:3px}
+.exp-page .exp-data-table {
+  border-collapse:collapse;
+  width:100%;
+  table-layout:auto;
+  margin:0;
+  color:#182f5c;
+  font:15px/1.6 Arial,"Helvetica Neue",sans-serif;
+}
+.exp-page .exp-data-table thead {background:var(--exp-navy);color:var(--exp-paper)}
+.exp-page .exp-data-table th {
+  color:var(--exp-paper);
+  text-align:left;
+  font-weight:750;
+  padding:13px 19px;
+  border:0;
+}
+.exp-page .exp-data-table th:not(:last-child) {border-right:1px solid rgba(255,255,234,.16)}
+.exp-page .exp-data-table td {
+  padding:12px 19px;
+  border-bottom:1px solid rgba(24,47,92,.13);
+  vertical-align:top;
+  overflow-wrap:break-word;
+}
+.exp-page .exp-data-table tbody tr:nth-child(even){background:rgba(24,47,92,.035)}
+.exp-page .exp-data-table tbody tr:last-child td{border-bottom:0}
+.exp-page .exp-data-table--2col th:first-child,
+.exp-page .exp-data-table--2col td:first-child {width:57%}
+.exp-page .exp-data-table--3col {min-width:550px}
+.exp-page .exp-data-table--3col th:first-child,
+.exp-page .exp-data-table--3col td:first-child {width:46%}
+.exp-page .exp-data-table--3col th:nth-child(2),
+.exp-page .exp-data-table--3col td:nth-child(2) {width:34%}
+.exp-page .exp-data-table .exp-total-row {background:rgba(255,155,46,.12)!important}
+.exp-page .exp-data-table .exp-total-row td {border-top:2px solid rgba(255,155,46,.65)}
+.exp-page .exp-data-table strong {font-weight:800;color:var(--exp-navy)}
+.exp-page .exp-primer-block {
+  border:1px solid var(--exp-rule);
+  border-left:4px solid var(--exp-orange);
+  background:#fffef6;
+  padding:16px 19px;
+  margin:15px 0 30px;
+}
+.exp-page .exp-primer-label {font-size:14px;letter-spacing:.025em;font-weight:750;color:var(--exp-navy);margin:0 0 12px}
+.exp-page .exp-primer-row {display:grid;grid-template-columns:32px minmax(0,1fr);gap:12px;align-items:start;padding:7px 0}
+.exp-page .exp-primer-row>span {font-weight:800;font-size:13px;color:var(--exp-orange)}
+.exp-page .exp-primer-row code {font:13px/1.65 ui-monospace,Consolas,Monaco,monospace;color:var(--exp-navy);white-space:normal;overflow-wrap:anywhere;word-break:break-word}
+@media(max-width:700px) {
+  .exp-page .exp-data-table {font-size:13px;line-height:1.5}
+  .exp-page .exp-data-table th {padding:11px 10px}
+  .exp-page .exp-data-table td {padding:10px 10px}
+  .exp-page .exp-data-table--2col th:first-child,
+  .exp-page .exp-data-table--2col td:first-child {width:60%}
+  .exp-page .exp-primer-block{padding:13px 12px}
+}
